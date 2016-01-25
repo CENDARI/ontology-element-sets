@@ -1,0 +1,1467 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY ontology "http://dbpedia.org/ontology/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY webprotege "http://protege.stanford.edu/webprotege/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+    <!ENTITY cedm "http://resources.cendari.dariah.eu/ontology/elementset/cedm/" >
+]>
+
+
+<rdf:RDF xmlns="http://resources.cendari.dariah.eu/ontology/elementset/cedm/"
+     xml:base="http://resources.cendari.dariah.eu/ontology/elementset/cedm/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:ontology="http://dbpedia.org/ontology/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:webprotege="http://protege.stanford.edu/webprotege/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:cedm="http://resources.cendari.dariah.eu/ontology/elementset/cedm/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://resources.cendari.dariah.eu/ontology/elementset/cedm/">
+        <dcterms:description rdf:datatype="&xsd;string">Extension to the Europeana Data Model developed as part of the CENDARI project (http://cendari.eu) for the WW1 community</dcterms:description>
+        <owl:versionInfo>Revision: 0.4.1</owl:versionInfo>
+        <dcterms:title xml:lang="en">CENDARI EDM Extension for WW1</dcterms:title>
+        <dcterms:creator xml:lang="en">WP6 CENDARI
+</dcterms:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/allegiance -->
+
+    <owl:ObjectProperty rdf:about="&ontology;allegiance">
+        <rdfs:label rdf:datatype="&xsd;string">dbpedia:allegiance</rdfs:label>
+        <rdfs:comment>The country or agent which the Person served. This is a more specific type of relationship than rdau:P60063 (rdau:countryAssociatedWithTheAgent.en) or rdau:P60095 (rdau:affiliation). Multiple allegiances should make use of skos:note from the Agent class to clarify any potential ambiguity.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;hasPart">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">dcterms:hasPart</rdfs:label>
+        <rdfs:comment>dcterms:hasPart is used to relate an Event, Place, Timespan, Group, or Organization to an associated resource of the same class (or to another Agent in the case of Group or Organization) that is part of it.</rdfs:comment>
+        <owl:inverseOf rdf:resource="&dcterms;isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;isPartOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">dcterms:isPartOf</rdfs:label>
+        <rdfs:comment>dcterms:isPartOf is used to relate an Agent, Event, Place, or Timespan to an associated resource of the same class that it is part of.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReplacedBy -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;isReplacedBy">
+        <rdfs:label rdf:datatype="&xsd;string">dcterms:isReplacedBy</rdfs:label>
+        <rdfs:comment>Relating an Organization or Group with an organization or group that replaces it. It has the inverse relationship dcterms:Replaces.</rdfs:comment>
+        <owl:inverseOf rdf:resource="&dcterms;replaces"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;replaces">
+        <rdfs:label rdf:datatype="&xsd;string">dcterms:replaces</rdfs:label>
+        <rdfs:comment>Relating an Organization or Group with an organization or group that it has replaced. It has the inverse relationship dcterms:isReplacedBy.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resources.cendari.dariah.eu/ontology/elementset/cedm/crm:P11i_participated_in -->
+
+    <owl:ObjectProperty rdf:about="&cedm;crm:P11i_participated_in">
+        <rdfs:label>crm:P11i_participated_in</rdfs:label>
+        <rdfs:comment>Relates an Event to an agent that participated in the event.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resources.cendari.dariah.eu/ontology/elementset/cedm/hasEndCalendar -->
+
+    <owl:ObjectProperty rdf:about="&cedm;hasEndCalendar">
+        <rdfs:label>cedm:hasEndCalendar</rdfs:label>
+        <rdfs:comment>Associates a calendar with the end of the Timespan.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Timespan"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resources.cendari.dariah.eu/ontology/elementset/cedm/hasStartCalendar -->
+
+    <owl:ObjectProperty rdf:about="&cedm;hasStartCalendar">
+        <rdfs:label>cedm:hasStartCalendar</rdfs:label>
+        <rdfs:comment>Associates a calendar with the start of the Timespan.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Timespan"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/children -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/children">
+        <rdfs:label rdf:datatype="&xsd;string">schema:children</rdfs:label>
+        <rdfs:comment>Relates a Person to a child of that person. It the inverse of schema:parent.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/relatedTo"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/employee -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/employee">
+        <rdfs:label rdf:datatype="&xsd;string">schema:employee</rdfs:label>
+        <rdfs:comment>Relates an Organization or Group to a person who works for the organization.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/founder -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/founder">
+        <rdfs:label rdf:datatype="&xsd;string">schema:founder</rdfs:label>
+        <rdfs:comment>Relates an Organization or Group to a person who founded the organization.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/parent -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/parent">
+        <rdfs:label rdf:datatype="&xsd;string">schema:parent</rdfs:label>
+        <rdfs:comment>Relating a Person to their parent. It has the inverse relationship schema:children</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://schema.org/children"/>
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/relatedTo"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/relatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/relatedTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">schema:relatedTo</rdfs:label>
+        <rdfs:comment>Relating a Person to another person with which they have a familial relation of some type.
+</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/sibling -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/sibling">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">schema:sibling</rdfs:label>
+        <rdfs:comment>Relating a Person to a sibling of that Person.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/relatedTo"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/spouse -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/spouse">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">schema:spouse</rdfs:label>
+        <rdfs:comment>Relating a Person to their spouse.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/relatedTo"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P107_has_current_or_former_member -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P107_has_current_or_former_member">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P107_has_current_or_former_member</rdfs:label>
+        <rdfs:comment>Relates an Organization or Group to a person who is (or was) a member of the organization/group.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P11_had_participant</rdfs:label>
+        <rdfs:comment>Relates an Event to an Agent that participated in the event</rdfs:comment>
+        <rdfs:comment>Relates an Event to an agent that participated in the event.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P120_occurs_before -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P120_occurs_before">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P120_occurs_before</rdfs:label>
+        <rdfs:comment>Relates an Event with another event that occurs after it. </rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/rdfs/cidoc-crm#P120i_occurs_after"/>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P120i_occurs_after -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P120i_occurs_after">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P120i_occurs_after</rdfs:label>
+        <rdfs:comment>Relates an Event with another event that occurs before it.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P121_overlaps_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P121_overlaps_with">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P121_overlaps_with</rdfs:label>
+        <rdfs:comment>crm:P121.overlaps_with relates two Places that overlap, but one is not wholly part of the other. </rdfs:comment>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P122_borders_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P122_borders_with">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P122_borders_with</rdfs:label>
+        <rdfs:comment>crm:P121.borders_with relates two Places that border with one another. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P12_occurred_in_the_presence_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P12_occurred_in_the_presence_of">
+        <rdfs:label rdf:datatype="&xsd;string">crm:occurred_in_the_presence_of</rdfs:label>
+        <rdfs:comment>Relates an Event to an Agent that was present at the event. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P14_carried_out_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P14_carried_out_by">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P14_carried_out_by</rdfs:label>
+        <rdfs:comment>Relates an Event to an Agent that carried out the event. It denotes a more active role than crm:P12F.occurred_in the_presence_of</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P15_was_influenced_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P15_was_influenced_by">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P15_was_influenced_by</rdfs:label>
+        <rdfs:comment>Relates an Agent or Event to significant concepts, events or agents that are thought to have influenced the Agent or Event.</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/rdfs/cidoc-crm#P15i_influenced"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P15i_influenced -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P15i_influenced">
+        <rdfs:label rdf:datatype="&xsd;string">crm:P15i_influenced</rdfs:label>
+        <rdfs:comment>Relates an Agent or Event to significant another Events or Agents that it has influenced.  It has the inverse crm:P15_was_influenced_by</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/happenedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.europeana.eu/schemas/edm/happenedAt">
+        <rdfs:label rdf:datatype="&xsd;string">edm:happenedAt</rdfs:label>
+        <rdfs:comment>edm:happenedAt relates an Event to to the place where it happened. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/hasMet -->
+
+    <owl:ObjectProperty rdf:about="http://www.europeana.eu/schemas/edm/hasMet">
+        <rdfs:label xml:lang="en">edm:hasMet</rdfs:label>
+        <rdfs:comment>edm:hasMet relates an agent with another agent it has met in space-time.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/isNextInSequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.europeana.eu/schemas/edm/isNextInSequence">
+        <rdfs:label rdf:datatype="&xsd;string">edm:isNextInSequence</rdfs:label>
+        <rdfs:comment>edm:isNextInSequence relates two Places that are ordered parts of a larger spatial object. For example, fortifications along a particular front.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.europeana.eu/schemas/edm/isRelatedTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">edm:isRelatedTo</rdfs:label>
+        <rdfs:comment>edm:isRelated to provides the most general of relationship between entities, enabling Agents, Events, Places and Concepts to be related to other resources without specifying the exact nature of the relationship.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/occuredAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.europeana.eu/schemas/edm/occuredAt">
+        <rdfs:label rdf:datatype="&xsd;string">edm:occuredAt</rdfs:label>
+        <rdfs:comment>edm:occuredAt relates an Event to to the Timespan when it occurred. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Timespan"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/wasPresentAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.europeana.eu/schemas/edm/wasPresentAt">
+        <rdfs:label xml:lang="en">edm:wasPresentAt</rdfs:label>
+        <rdfs:comment>edm:wasPresentAt relates an agent with an event the agent was present at.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60063 -->
+
+    <owl:ObjectProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60063">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:countryAssociatedWithTheAgent</rdfs:label>
+        <rdfs:comment>Relates an Agent to a country associated with the Agent. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60095 -->
+
+    <owl:ObjectProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60095">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:affiliation</rdfs:label>
+        <rdfs:comment>Relates a Person to a source to a group or organization with which they are affiliated or has been affiliated.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60325 -->
+
+    <owl:ObjectProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60325">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:placeAssociatedWithTheAgent</rdfs:label>
+        <rdfs:comment>Relates an Agent to a significant place associated with the Agent.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60482 -->
+
+    <owl:ObjectProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60482">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:associatedInstitution</rdfs:label>
+        <rdfs:comment>Relating an Organization or Group with another organization or group with which it is associated. </rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60592 -->
+
+    <owl:ObjectProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60592">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:placeOfDeath</rdfs:label>
+        <rdfs:comment>Relates a Person to a place where they died.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60593 -->
+
+    <owl:ObjectProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60593">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:placeOfBirth</rdfs:label>
+        <rdfs:comment>Relates a Person to a place where they were born.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="&owl;sameAs">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>owl:sameAs</rdfs:label>
+        <rdfs:comment>owl:sameAs is used to link an Agent ,Event, Place, Timespan, or Concept with another URI that is being used to represent the same resources.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;broadMatch">
+        <rdfs:label rdf:datatype="&xsd;string">skos:broadMatch</rdfs:label>
+        <rdfs:comment>skos:broadMatch, like skos:broader, is used to relate a concept to another with a broader meaning. It is used where the related concepts are in different schemes.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:label rdf:datatype="&xsd;string">skos:broader</rdfs:label>
+        <rdfs:comment>skos:broader (alongside the inverse skos:narrower) enables thesaurus-like hierarchical relationships, relating a concept to a concept with a broader meaning. </rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;closeMatch">
+        <rdfs:label rdf:datatype="&xsd;string">skos:closeMatch</rdfs:label>
+        <rdfs:comment>skos:closeMatch links two concepts in different concept schemes that may be used interchangeably in some cases. It is a super-property of skos:exactMatch.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;exactMatch">
+        <rdfs:label rdf:datatype="&xsd;string">skos:exactMatch</rdfs:label>
+        <rdfs:comment>skos:exactMatch links two concepts in different concept schemes that may be used interchangeably in many cases. It is a sub-property of skos:closeMatch.
+</rdfs:comment>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;closeMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="&skos;hasTopConcept">
+        <rdfs:label rdf:datatype="&xsd;string">skos:hasTopConcept</rdfs:label>
+        <rdfs:comment>skos:hasTopConcept is used to link a concept scheme to the top SKOS:concept in the sheme&apos;s hierarchy. </rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;ConceptScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrowMatch">
+        <rdfs:label rdf:datatype="&xsd;string">skos:narrowMatch</rdfs:label>
+        <rdfs:comment>skos:narrowMatch, like skos:narrower, is used to relate a concept to another with a narrower meaning. It is used where the related concepts are in different concept schemes.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:label rdf:datatype="&xsd;string">skos:narrower</rdfs:label>
+        <rdfs:comment>skos:narrower (alongside the inverse skos:broader) enables thesaurus-like hierarchical relationships, relating a concept to a concept with a narrower meaning. 
+</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="&skos;related">
+        <rdfs:label rdf:datatype="&xsd;string">skos:related</rdfs:label>
+        <rdfs:comment>Similar to the ‘related term’ relationship in the traditional thesaurus, it relates concepts with associated meanings in the same concept scheme. </rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;relatedMatch">
+        <rdfs:label rdf:datatype="&xsd;string">skos:relatedMatch</rdfs:label>
+        <rdfs:comment>skos:relatedMatch, like skos:related, is used to relate concepts with associated meanings. It is used where the related concepts are in different concept schemes.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/knows -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/knows">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>foaf:knows</rdfs:label>
+        <rdfs:comment>Relating the Person to another person who they know. It indicates a level of reciprocity people the people (i.e., if person A knows person B, then person B knows person A), and is used as an alternative to more potentially subjective relationships (e.g., dbpedia-owl:friend, dbpedia-owl:opponent, schema:colleague)</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.europeana.eu/schemas/edm/isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/casualties -->
+
+    <owl:DatatypeProperty rdf:about="&ontology;casualties">
+        <rdfs:label>dbpedia:casualties</rdfs:label>
+        <rdfs:comment>If the Event was a battle, or another event with casualties (e.g., the sinking of a ship), then the dbpedia-owl:casualties property may be used. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/causeOfDeath -->
+
+    <owl:DatatypeProperty rdf:about="&ontology;causeOfDeath">
+        <rdfs:label>dbpedia:causeOfDeath</rdfs:label>
+        <rdfs:comment>Details on the cause of death.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/strength -->
+
+    <owl:DatatypeProperty rdf:about="&ontology;strength">
+        <rdfs:label>dbpedia:strength</rdfs:label>
+        <rdfs:comment>Information about the number of participants involved in an event. It is not limited to a single number (or even a set of numbers), as the information sources often contain additional information. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:DatatypeProperty rdf:about="&dc;creator">
+        <rdfs:label rdf:datatype="&xsd;string">dc:creator</rdfs:label>
+        <rdfs:comment>Provides the name of the creator of a concept scheme.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain rdf:resource="&skos;ConceptScheme"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:DatatypeProperty rdf:about="&dc;identifier">
+        <rdfs:label rdf:datatype="&xsd;string">dc:identifier</rdfs:label>
+        <rdfs:comment>Unambiguous identifier for the Agent in a particular context. 
+
+Nb. Where an identifier takes the form of a URI owl:sameAs should be used.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:DatatypeProperty rdf:about="&dc;title">
+        <rdfs:label rdf:datatype="&xsd;string">dc:title</rdfs:label>
+        <rdfs:comment>dc:title is used to provide a title for a concept scheme</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain rdf:resource="&skos;ConceptScheme"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:DatatypeProperty rdf:about="&dcterms;references">
+        <rdfs:label>dcterms:references</rdfs:label>
+        <rdfs:comment>Relates an Agent, Event, Place, or Concept to an online source of information about that event in the form of a URL. Non-URL notes about sources of information should make use of the skos:note property.
+</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:DatatypeProperty rdf:about="&dcterms;type">
+        <rdfs:label>dcterms:type</rdfs:label>
+        <rdfs:comment>The type of organization, group, place or event, e.g., religious, terrorist, social, prison, canal or battle.</rdfs:comment>
+        <owl:equivalentProperty rdf:resource="&cedm;edm:hasType"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rdaregistry.info/Elements/u/#P60089 -->
+
+    <owl:DatatypeProperty rdf:about="http://rdaregistry.info/Elements/u/#P60089">
+        <rdfs:label xml:lang="en">rdau:fieldOfActivity</rdfs:label>
+        <rdfs:comment>Contains the field of activity of the Agent.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rdaregistry.info/Elements/u/#P60468 -->
+
+    <owl:DatatypeProperty rdf:about="http://rdaregistry.info/Elements/u/#P60468">
+        <rdfs:label>rdau:professionOrOccupation</rdfs:label>
+        <rdfs:comment>Contains information on about an Agent’s profession or occupation. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resources.cendari.dariah.eu/ontology/elementset/cedm/edm:hasType -->
+
+    <owl:DatatypeProperty rdf:about="&cedm;edm:hasType">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P79_beginning_is_qualified_by -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P79_beginning_is_qualified_by">
+        <rdfs:label rdf:datatype="&xsd;string">crm:beginning_is_qualified_by</rdfs:label>
+        <rdfs:comment>Qualifies the beginning of a Timespan in some way, e.g., according to a particular source, or precision. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Timespan"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P80_end_is_qualified_by -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P80_end_is_qualified_by">
+        <rdfs:label rdf:datatype="&xsd;string">crm:end_is_qualified_by</rdfs:label>
+        <rdfs:comment>Qualifies the end of a Timespan in some way, e.g., according to a particular source, or precision. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Timespan"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/begin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.europeana.eu/schemas/edm/begin">
+        <rdfs:label rdf:datatype="&xsd;string">edm:begin</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Contains the start date of a group or timespan.It is recommended that  dates conform to ISO 8601</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/end -->
+
+    <owl:DatatypeProperty rdf:about="http://www.europeana.eu/schemas/edm/end">
+        <rdfs:label rdf:datatype="&xsd;string">edm:end</rdfs:label>
+        <rdfs:comment>Contains the end date of a group or timespan.It is recommended that  dates conform to ISO 8601</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60492 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60492">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:biographicalInformation</rdfs:label>
+        <rdfs:comment>Biographical information about an Agent.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60524 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60524">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:dateOfEstablishment</rdfs:label>
+        <rdfs:comment>Relates an organization with the date it was established or founded.It is recommended that  dates conform to ISO 8601.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60525 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60525">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:dateOfTermination</rdfs:label>
+        <rdfs:comment>Relates an organization with the date it was terminated or dissolved. It is recommended that  dates conform to ISO 8601.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60531 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60531">
+        <rdfs:label xml:lang="en">rdau:gender</rdfs:label>
+        <rdfs:comment>Relates a person to their gender.
+</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60598 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60598">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:dateOfDeath</rdfs:label>
+        <rdfs:comment>Contains a Person’s date of death. It is recommended that  dates conform to ISO 8601</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rdaregistry.info/Elements/u/#P60599 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rdaregistry.info/Elements/u/#P60599">
+        <rdfs:label rdf:datatype="&xsd;string">rdau:dateOfBirth</rdfs:label>
+        <rdfs:comment>Contains a Person’s date of birth. It is recommended that  dates conform to ISO 8601.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+        <rdfs:label rdf:datatype="&xsd;string">wgs84_pos:alt</rdfs:label>
+        <rdfs:comment>The altitude of a Place in metres.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:label rdf:datatype="&xsd;string">wgs84_pos:lat</rdfs:label>
+        <rdfs:comment>The latitude of a Place in decimal degrees. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat_long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat_long">
+        <rdfs:label rdf:datatype="&xsd;string">wgs84_pos:lat_long</rdfs:label>
+        <rdfs:comment>Comma-separated latitude and longitude. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:label rdf:datatype="&xsd;string">wgs84_pos:long</rdfs:label>
+        <rdfs:comment>The longitude of a Place in decimal degrees. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;altLabel">
+        <rdfs:label rdf:datatype="&xsd;string">skos:altLabel</rdfs:label>
+        <rdfs:comment>An alternative, non-preferred label.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hiddenLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;hiddenLabel">
+        <rdfs:label rdf:datatype="&xsd;string">skos:hiddenLabel</rdfs:label>
+        <rdfs:comment>For search and indexing purposes it is also possible to include hidden labels that should not be displayed to users. </rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:DatatypeProperty rdf:about="&skos;note">
+        <rdfs:label>skos:note</rdfs:label>
+        <rdfs:comment>A general note about anything relevant to a Concept, Agent, Place, Timespan, or Event.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel">
+        <rdfs:label rdf:datatype="&xsd;string">skos:prefLabel</rdfs:label>
+        <rdfs:comment>The preferred label for a resource in a particular language.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+                    <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/familyName -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/familyName">
+        <rdfs:label rdf:datatype="&xsd;string">foaf:familyName</rdfs:label>
+        <rdfs:comment>The family name of the Person.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/givenName -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/givenName">
+        <rdfs:label rdf:datatype="&xsd;string">foaf:givenName</rdfs:label>
+        <rdfs:comment>The given name of the Person.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:label rdf:datatype="&xsd;string">foaf:name</rdfs:label>
+        <rdfs:comment>A name for an Agent that is not being used as a label.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/title -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/title">
+        <rdfs:label rdf:datatype="&xsd;string">foaf:title</rdfs:label>
+        <rdfs:comment>Title is a broad property that may accommodate both common titles (e.g., Mr, Mrs, Dr.), as well as military titles (e.g., General, Corporal) and epithets (e.g., the Red Baron).
+</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;note"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/Agent -->
+
+    <owl:Class rdf:about="http://www.europeana.eu/schemas/edm/Agent">
+        <rdfs:label rdf:datatype="&xsd;string">edm:Agent</rdfs:label>
+        <rdfs:comment>Agents consist of people, groups, and organizations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/Event -->
+
+    <owl:Class rdf:about="http://www.europeana.eu/schemas/edm/Event">
+        <rdfs:label rdf:datatype="&xsd;string">edm:Event</rdfs:label>
+        <rdfs:comment>Events are named periods of time and space.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/Place -->
+
+    <owl:Class rdf:about="http://www.europeana.eu/schemas/edm/Place">
+        <rdfs:label rdf:datatype="&xsd;string">edm:Place</rdfs:label>
+        <rdfs:comment>Places are spatial locations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.europeana.eu/schemas/edm/Timespan -->
+
+    <owl:Class rdf:about="http://www.europeana.eu/schemas/edm/Timespan">
+        <rdfs:label rdf:datatype="&xsd;string">edm:Timespan</rdfs:label>
+        <rdfs:comment>Timespans are periods of time, with beginnings and ends. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:label rdf:datatype="&xsd;string">skos:Concept</rdfs:label>
+        <rdfs:comment>Concepts are abstract simplified ideas about the world. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:label rdf:datatype="&xsd;string">skos:ConceptScheme</rdfs:label>
+        <rdfs:comment>Concept schemes are collections of concepts, collected or created by a recognized agent.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:label rdf:datatype="&xsd;string">foaf:Group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label rdf:datatype="&xsd;string">foaf:Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label rdf:datatype="&xsd;string">foaf:Person</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resources.cendari.dariah.eu/ontology/elementset/cedm/ -->
+
+    <owl:NamedIndividual rdf:about="http://resources.cendari.dariah.eu/ontology/elementset/cedm/">
+        <dc:creator rdf:datatype="&xsd;string">David Stuart</dc:creator>
+        <dc:creator rdf:datatype="&xsd;string">system</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Agent"/>
+            <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Event"/>
+            <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Place"/>
+            <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/Timespan"/>
+            <rdf:Description rdf:about="&skos;Concept"/>
+            <rdf:Description rdf:about="&skos;ConceptScheme"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

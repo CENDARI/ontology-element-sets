@@ -1,0 +1,2164 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.2.0), http://vowl.visualdataweb.org",
+  "namespace" : [ ],
+  "header" : {
+    "languages" : [ "IRI-based", "undefined", "en" ],
+    "title" : {
+      "en" : "CENDARI EDM Extension for WW1"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontology/elementset/cedm/",
+    "version" : "Revision: 0.4.1",
+    "author" : [ "WP6 CENDARI\n" ],
+    "description" : {
+      "undefined" : "Extension to the Europeana Data Model developed as part of the CENDARI project (http://cendari.eu) for the WW1 community"
+    }
+  },
+  "metrics" : {
+    "classCount" : 9,
+    "datatypeCount" : 34,
+    "objectPropertyCount" : 49,
+    "datatypePropertyCount" : 34,
+    "propertyCount" : 83,
+    "nodeCount" : 43,
+    "axiomCount" : 516,
+    "individualCount" : 1
+  },
+  "class" : [ {
+    "id" : "class7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class4",
+    "type" : "externalclass"
+  }, {
+    "id" : "class3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class2",
+    "type" : "externalclass"
+  }, {
+    "id" : "class9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "thing1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "class17",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class18",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class15",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class13",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class14",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class11",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class12",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class10",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class20",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class19",
+    "type" : "owl:unionOf"
+  } ],
+  "classAttribute" : [ {
+    "id" : "class7",
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "edm:Event"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/Event",
+    "comment" : {
+      "undefined" : "Events are named periods of time and space."
+    },
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class6",
+    "label" : {
+      "IRI-based" : "Group",
+      "undefined" : "foaf:Group"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/Group",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class8" ],
+    "instances" : 0
+  }, {
+    "id" : "class5",
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "foaf:Organization"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class8" ],
+    "instances" : 0
+  }, {
+    "id" : "class4",
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "foaf:Person"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class8" ],
+    "instances" : 0
+  }, {
+    "id" : "class3",
+    "label" : {
+      "IRI-based" : "Place",
+      "undefined" : "edm:Place"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/Place",
+    "comment" : {
+      "undefined" : "Places are spatial locations."
+    },
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class2",
+    "label" : {
+      "IRI-based" : "ConceptScheme",
+      "undefined" : "skos:ConceptScheme"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "comment" : {
+      "undefined" : "Concept schemes are collections of concepts, collected or created by a recognized agent."
+    },
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class9",
+    "label" : {
+      "IRI-based" : "Concept",
+      "undefined" : "skos:Concept"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "comment" : {
+      "undefined" : "Concepts are abstract simplified ideas about the world. "
+    },
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class1",
+    "label" : {
+      "IRI-based" : "Timespan",
+      "undefined" : "edm:Timespan"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/Timespan",
+    "comment" : {
+      "undefined" : "Timespans are periods of time, with beginnings and ends. "
+    },
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class8",
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "edm:Agent"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/Agent",
+    "comment" : {
+      "undefined" : "Agents consist of people, groups, and organizations."
+    },
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class6", "class5", "class4" ],
+    "instances" : 0
+  }, {
+    "id" : "thing1",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "class17",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class1", "class3", "class7", "class8", "class9" ]
+  }, {
+    "id" : "class18",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class1", "class3" ]
+  }, {
+    "id" : "class15",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class3", "class7", "class8", "class9" ]
+  }, {
+    "id" : "class13",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class3", "class8" ]
+  }, {
+    "id" : "class14",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class1", "class3", "class5", "class6", "class7" ]
+  }, {
+    "id" : "class11",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class7", "class8", "class9" ]
+  }, {
+    "id" : "class12",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class1", "class3", "class6", "class7", "class8" ]
+  }, {
+    "id" : "class10",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class5", "class6" ]
+  }, {
+    "id" : "class20",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class1", "class6" ]
+  }, {
+    "id" : "class19",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class3", "class5", "class6", "class7" ]
+  } ],
+  "datatype" : [ {
+    "id" : "datatype1",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal11",
+    "type" : "rdfs:Literal"
+  } ],
+  "datatypeAttribute" : [ {
+    "id" : "datatype1",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype2",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype19",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype3",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype17",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype18",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype15",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype16",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal26",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype13",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal25",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype14",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype30",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype12",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype10",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype33",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype34",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal27",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal21",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal22",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype9",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype4",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype7",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal8",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype28",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype29",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype23",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal6",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype24",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal5",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype20",
+    "label" : {
+      "IRI-based" : "anyURI"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  }, {
+    "id" : "literal31",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal32",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal11",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "property" : [ {
+    "id" : "property52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property7",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property6",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property5",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property11",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property10",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property4",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property2",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property1",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property48",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "id" : "property52",
+    "label" : {
+      "IRI-based" : "P121_overlaps_with",
+      "undefined" : "crm:P121_overlaps_with"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P121_overlaps_with",
+    "comment" : {
+      "undefined" : "crm:P121.overlaps_with relates two Places that overlap, but one is not wholly part of the other. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class3",
+    "range" : "class3",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property66",
+    "label" : {
+      "IRI-based" : "isRelatedTo",
+      "undefined" : "edm:isRelatedTo"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/isRelatedTo",
+    "comment" : {
+      "undefined" : "edm:isRelated to provides the most general of relationship between entities, enabling Agents, Events, Places and Concepts to be related to other resources without specifying the exact nature of the relationship."
+    },
+    "attributes" : [ "external", "symmetric" ],
+    "domain" : "class15",
+    "range" : "class15",
+    "subproperty" : [ "property56", "property68", "property44", "property50", "property82", "property40", "property76", "property63", "property54", "property52", "property51", "property59", "property45", "property41", "property60", "property77", "property64", "property49", "property73", "property75" ],
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property81",
+    "label" : {
+      "IRI-based" : "hasTopConcept",
+      "undefined" : "skos:hasTopConcept"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+    "comment" : {
+      "undefined" : "skos:hasTopConcept is used to link a concept scheme to the top SKOS:concept in the sheme's hierarchy. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "class9",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property90",
+    "label" : {
+      "IRI-based" : "P60524",
+      "undefined" : "rdau:dateOfEstablishment"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60524",
+    "comment" : {
+      "undefined" : "Relates an organization with the date it was established or founded.It is recommended that  dates conform to ISO 8601."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class5",
+    "range" : "literal8",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property88",
+    "label" : {
+      "IRI-based" : "P60525",
+      "undefined" : "rdau:dateOfTermination"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60525",
+    "comment" : {
+      "undefined" : "Relates an organization with the date it was terminated or dissolved. It is recommended that  dates conform to ISO 8601."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class5",
+    "range" : "literal6",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property49",
+    "label" : {
+      "IRI-based" : "P60325",
+      "undefined" : "rdau:placeAssociatedWithTheAgent"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60325",
+    "comment" : {
+      "undefined" : "Relates an Agent to a significant place associated with the Agent."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "class3",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property86",
+    "label" : {
+      "IRI-based" : "prefLabel",
+      "undefined" : "skos:prefLabel"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "comment" : {
+      "undefined" : "The preferred label for a resource in a particular language."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "datatype4",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property44",
+    "label" : {
+      "IRI-based" : "replaces",
+      "undefined" : "dcterms:replaces"
+    },
+    "iri" : "http://purl.org/dc/terms/replaces",
+    "comment" : {
+      "undefined" : "Relating an Organization or Group with an organization or group that it has replaced. It has the inverse relationship dcterms:isReplacedBy."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class10",
+    "range" : "class10",
+    "inverse" : "property68",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property26",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class6",
+    "range" : "class8"
+  }, {
+    "id" : "property76",
+    "label" : {
+      "IRI-based" : "relatedTo",
+      "undefined" : "schema:relatedTo"
+    },
+    "iri" : "http://schema.org/relatedTo",
+    "comment" : {
+      "undefined" : "Relating a Person to another person with which they have a familial relation of some type.\n"
+    },
+    "attributes" : [ "external", "symmetric" ],
+    "domain" : "class4",
+    "range" : "class4",
+    "subproperty" : [ "property42", "property70", "property72", "property53" ],
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property28",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class4",
+    "range" : "class8"
+  }, {
+    "id" : "property27",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class5",
+    "range" : "class8"
+  }, {
+    "id" : "property24",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class8",
+    "range" : "class1"
+  }, {
+    "id" : "property112",
+    "label" : {
+      "IRI-based" : "P80_end_is_qualified_by",
+      "undefined" : "crm:end_is_qualified_by"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P80_end_is_qualified_by",
+    "comment" : {
+      "undefined" : "Qualifies the end of a Timespan in some way, e.g., according to a particular source, or precision. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class1",
+    "range" : "datatype30",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property115",
+    "label" : {
+      "IRI-based" : "altLabel",
+      "undefined" : "skos:altLabel"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#altLabel",
+    "comment" : {
+      "undefined" : "An alternative, non-preferred label."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "datatype33",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property59",
+    "label" : {
+      "IRI-based" : "P12_occurred_in_the_presence_of",
+      "undefined" : "crm:occurred_in_the_presence_of"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P12_occurred_in_the_presence_of",
+    "comment" : {
+      "undefined" : "Relates an Event to an Agent that was present at the event. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "class4",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property34",
+    "label" : {
+      "IRI-based" : "broadMatch",
+      "undefined" : "skos:broadMatch"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#broadMatch",
+    "comment" : {
+      "undefined" : "skos:broadMatch, like skos:broader, is used to relate a concept to another with a broader meaning. It is used where the related concepts are in different schemes."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class9",
+    "range" : "class9",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property104",
+    "label" : {
+      "IRI-based" : "type",
+      "undefined" : "dcterms:type"
+    },
+    "iri" : "http://purl.org/dc/terms/type",
+    "comment" : {
+      "undefined" : "The type of organization, group, place or event, e.g., religious, terrorist, social, prison, canal or battle."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class19",
+    "range" : "literal22",
+    "equivalent" : [ "property85" ],
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property64",
+    "label" : {
+      "IRI-based" : "P60095",
+      "undefined" : "rdau:affiliation"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60095",
+    "comment" : {
+      "undefined" : "Relates a Person to a source to a group or organization with which they are affiliated or has been affiliated."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "class10",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property20",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class8",
+    "range" : "class9"
+  }, {
+    "id" : "property91",
+    "label" : {
+      "IRI-based" : "P79_beginning_is_qualified_by",
+      "undefined" : "crm:beginning_is_qualified_by"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P79_beginning_is_qualified_by",
+    "comment" : {
+      "undefined" : "Qualifies the beginning of a Timespan in some way, e.g., according to a particular source, or precision. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class1",
+    "range" : "datatype9",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property111",
+    "label" : {
+      "IRI-based" : "P60531",
+      "en" : "rdau:gender"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60531",
+    "comment" : {
+      "undefined" : "Relates a person to their gender.\n"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "datatype29",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property54",
+    "label" : {
+      "IRI-based" : "P11_had_participant",
+      "undefined" : "crm:P11_had_participant"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant",
+    "comment" : {
+      "undefined" : "Relates an Event to an agent that participated in the event."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "class8",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property109",
+    "label" : {
+      "IRI-based" : "casualties",
+      "undefined" : "dbpedia:casualties"
+    },
+    "iri" : "http://dbpedia.org/ontology/casualties",
+    "comment" : {
+      "undefined" : "If the Event was a battle, or another event with casualties (e.g., the sinking of a ship), then the dbpedia-owl:casualties property may be used. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "literal27",
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property16",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class1",
+    "range" : "class9"
+  }, {
+    "id" : "property15",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class9",
+    "range" : "class2"
+  }, {
+    "id" : "property14",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class8",
+    "range" : "class2"
+  }, {
+    "id" : "property9",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class8",
+    "range" : "class3"
+  }, {
+    "id" : "property71",
+    "label" : {
+      "IRI-based" : "sameAs",
+      "undefined" : "owl:sameAs"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#sameAs",
+    "comment" : {
+      "undefined" : "owl:sameAs is used to link an Agent ,Event, Place, Timespan, or Concept with another URI that is being used to represent the same resources."
+    },
+    "attributes" : [ "external", "symmetric" ],
+    "domain" : "class17",
+    "range" : "class17",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property7",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class2",
+    "range" : "class3"
+  }, {
+    "id" : "property6",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class1",
+    "range" : "class3"
+  }, {
+    "id" : "property5",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class9",
+    "range" : "class7"
+  }, {
+    "id" : "property77",
+    "label" : {
+      "IRI-based" : "P60063",
+      "undefined" : "rdau:countryAssociatedWithTheAgent"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60063",
+    "comment" : {
+      "undefined" : "Relates an Agent to a country associated with the Agent. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "class3",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property72",
+    "label" : {
+      "IRI-based" : "sibling",
+      "undefined" : "schema:sibling"
+    },
+    "iri" : "http://schema.org/sibling",
+    "comment" : {
+      "undefined" : "Relating a Person to a sibling of that Person."
+    },
+    "attributes" : [ "external", "symmetric" ],
+    "domain" : "class4",
+    "range" : "class4",
+    "superproperty" : [ "property76" ]
+  }, {
+    "id" : "property51",
+    "label" : {
+      "IRI-based" : "P122_borders_with",
+      "undefined" : "crm:P122_borders_with"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P122_borders_with",
+    "comment" : {
+      "undefined" : "crm:P121.borders_with relates two Places that border with one another. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class3",
+    "range" : "class3",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property11",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class1",
+    "range" : "class2"
+  }, {
+    "id" : "property10",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class9",
+    "range" : "class3"
+  }, {
+    "id" : "property87",
+    "label" : {
+      "IRI-based" : "P60089",
+      "en" : "rdau:fieldOfActivity"
+    },
+    "iri" : "http://rdaregistry.info/Elements/u/#P60089",
+    "comment" : {
+      "undefined" : "Contains the field of activity of the Agent."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "literal5",
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property38",
+    "label" : {
+      "IRI-based" : "P120_occurs_before",
+      "undefined" : "crm:P120_occurs_before"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P120_occurs_before",
+    "comment" : {
+      "undefined" : "Relates an Event with another event that occurs after it. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "class7",
+    "inverse" : "property79",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property84",
+    "label" : {
+      "IRI-based" : "causeOfDeath",
+      "undefined" : "dbpedia:causeOfDeath"
+    },
+    "iri" : "http://dbpedia.org/ontology/causeOfDeath",
+    "comment" : {
+      "undefined" : "Details on the cause of death."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "datatype2",
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property116",
+    "label" : {
+      "IRI-based" : "note",
+      "undefined" : "skos:note"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#note",
+    "comment" : {
+      "undefined" : "A general note about anything relevant to a Concept, Agent, Place, Timespan, or Event."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "datatype34",
+    "subproperty" : [ "property109", "property84", "property95", "property104", "property87", "property106", "property96", "property83", "property100" ],
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property57",
+    "label" : {
+      "IRI-based" : "closeMatch",
+      "undefined" : "skos:closeMatch"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+    "comment" : {
+      "undefined" : "skos:closeMatch links two concepts in different concept schemes that may be used interchangeably in some cases. It is a super-property of skos:exactMatch."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class9",
+    "range" : "class9",
+    "subproperty" : [ "property48" ],
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property68",
+    "label" : {
+      "IRI-based" : "isReplacedBy",
+      "undefined" : "dcterms:isReplacedBy"
+    },
+    "iri" : "http://purl.org/dc/terms/isReplacedBy",
+    "comment" : {
+      "undefined" : "Relating an Organization or Group with an organization or group that replaces it. It has the inverse relationship dcterms:Replaces."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class10",
+    "range" : "class10",
+    "inverse" : "property44",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property113",
+    "label" : {
+      "IRI-based" : "P60599",
+      "undefined" : "rdau:dateOfBirth"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60599",
+    "comment" : {
+      "undefined" : "Contains a Person’s date of birth. It is recommended that  dates conform to ISO 8601."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "literal31",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property93",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "literal11",
+    "subproperty" : [ "property89", "property94", "property110", "property91", "property112", "property107", "property108", "property92", "property90", "property88", "property111", "property114", "property113", "property99", "property97", "property103", "property101", "property115", "property98", "property116", "property86" ]
+  }, {
+    "id" : "property114",
+    "label" : {
+      "IRI-based" : "P60598",
+      "undefined" : "rdau:dateOfDeath"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60598",
+    "comment" : {
+      "undefined" : "Contains a Person’s date of death. It is recommended that  dates conform to ISO 8601"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "literal32",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property45",
+    "label" : {
+      "IRI-based" : "P14_carried_out_by",
+      "undefined" : "crm:P14_carried_out_by"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P14_carried_out_by",
+    "comment" : {
+      "undefined" : "Relates an Event to an Agent that carried out the event. It denotes a more active role than crm:P12F.occurred_in the_presence_of"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "class8",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property60",
+    "label" : {
+      "IRI-based" : "P15i_influenced",
+      "undefined" : "crm:P15i_influenced"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P15i_influenced",
+    "comment" : {
+      "undefined" : "Relates an Agent or Event to significant another Events or Agents that it has influenced.  It has the inverse crm:P15_was_influenced_by"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class11",
+    "range" : "class11",
+    "inverse" : "property41",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property67",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "attributes" : [ "external" ],
+    "domain" : "thing1",
+    "range" : "thing1",
+    "subproperty" : [ "property61", "property55", "property38", "property79", "property47", "property46", "property74", "property66", "property78", "property58", "property37", "property35", "property71", "property34", "property65", "property57", "property81", "property39", "property80", "property43", "property36" ]
+  }, {
+    "id" : "property35",
+    "label" : {
+      "IRI-based" : "P60593",
+      "undefined" : "rdau:placeOfBirth"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60593",
+    "comment" : {
+      "undefined" : "Relates a Person to a place where they were born."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "class3",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property37",
+    "label" : {
+      "IRI-based" : "P60592",
+      "undefined" : "rdau:placeOfDeath"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60592",
+    "comment" : {
+      "undefined" : "Relates a Person to a place where they died."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "class3",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property105",
+    "label" : {
+      "IRI-based" : "P60468",
+      "undefined" : "rdau:professionOrOccupation"
+    },
+    "iri" : "http://rdaregistry.info/Elements/u/#P60468",
+    "comment" : {
+      "undefined" : "Contains information on about an Agent’s profession or occupation. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "datatype23"
+  }, {
+    "id" : "property62",
+    "label" : {
+      "IRI-based" : "hasEndCalendar",
+      "undefined" : "cedm:hasEndCalendar"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontology/elementset/cedm/hasEndCalendar",
+    "comment" : {
+      "undefined" : "Associates a calendar with the end of the Timespan."
+    },
+    "domain" : "class1",
+    "range" : "class9"
+  }, {
+    "id" : "property47",
+    "label" : {
+      "IRI-based" : "happenedAt",
+      "undefined" : "edm:happenedAt"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/happenedAt",
+    "comment" : {
+      "undefined" : "edm:happenedAt relates an Event to to the place where it happened. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "class3",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property70",
+    "label" : {
+      "IRI-based" : "parent",
+      "undefined" : "schema:parent"
+    },
+    "iri" : "http://schema.org/parent",
+    "comment" : {
+      "undefined" : "Relating a Person to their parent. It has the inverse relationship schema:children"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "class4",
+    "inverse" : "property42",
+    "superproperty" : [ "property76" ]
+  }, {
+    "id" : "property85",
+    "label" : {
+      "IRI-based" : "edm:hasType"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontology/elementset/cedm/edm:hasType",
+    "domain" : "thing1",
+    "range" : "datatype3",
+    "equivalent" : [ "property104" ]
+  }, {
+    "id" : "property58",
+    "label" : {
+      "IRI-based" : "wasPresentAt",
+      "en" : "edm:wasPresentAt"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/wasPresentAt",
+    "comment" : {
+      "undefined" : "edm:wasPresentAt relates an agent with an event the agent was present at."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "class3",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property40",
+    "label" : {
+      "IRI-based" : "founder",
+      "undefined" : "schema:founder"
+    },
+    "iri" : "http://schema.org/founder",
+    "comment" : {
+      "undefined" : "Relates an Organization or Group to a person who founded the organization."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class10",
+    "range" : "class4",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property102",
+    "label" : {
+      "IRI-based" : "references",
+      "undefined" : "dcterms:references"
+    },
+    "iri" : "http://purl.org/dc/terms/references",
+    "comment" : {
+      "undefined" : "Relates an Agent, Event, Place, or Concept to an online source of information about that event in the form of a URL. Non-URL notes about sources of information should make use of the skos:note property.\n"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class15",
+    "range" : "datatype20"
+  }, {
+    "id" : "property106",
+    "label" : {
+      "IRI-based" : "familyName",
+      "undefined" : "foaf:familyName"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/familyName",
+    "comment" : {
+      "undefined" : "The family name of the Person."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "datatype24",
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property110",
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "dc:title"
+    },
+    "iri" : "http://purl.org/dc/elements/1.1/title",
+    "comment" : {
+      "undefined" : "dc:title is used to provide a title for a concept scheme"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "datatype28",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property46",
+    "label" : {
+      "IRI-based" : "hasMet",
+      "en" : "edm:hasMet"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/hasMet",
+    "comment" : {
+      "undefined" : "edm:hasMet relates an agent with another agent it has met in space-time."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "class8",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property74",
+    "label" : {
+      "IRI-based" : "isNextInSequence",
+      "undefined" : "edm:isNextInSequence"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/isNextInSequence",
+    "comment" : {
+      "undefined" : "edm:isNextInSequence relates two Places that are ordered parts of a larger spatial object. For example, fortifications along a particular front."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class18",
+    "range" : "class18",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property100",
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "foaf:title"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/title",
+    "comment" : {
+      "undefined" : "Title is a broad property that may accommodate both common titles (e.g., Mr, Mrs, Dr.), as well as military titles (e.g., General, Corporal) and epithets (e.g., the Red Baron).\n"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "datatype18",
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property107",
+    "label" : {
+      "IRI-based" : "begin",
+      "undefined" : "edm:begin"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/begin",
+    "comment" : {
+      "undefined" : "Contains the start date of a group or timespan.It is recommended that  dates conform to ISO 8601"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class20",
+    "range" : "literal25",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property103",
+    "label" : {
+      "IRI-based" : "lat_long",
+      "undefined" : "wgs84_pos:lat_long"
+    },
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long",
+    "comment" : {
+      "undefined" : "Comma-separated latitude and longitude. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class3",
+    "range" : "literal21",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property4",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class8",
+    "range" : "class7"
+  }, {
+    "id" : "property94",
+    "label" : {
+      "IRI-based" : "identifier",
+      "undefined" : "dc:identifier"
+    },
+    "iri" : "http://purl.org/dc/elements/1.1/identifier",
+    "comment" : {
+      "undefined" : "Unambiguous identifier for the Agent in a particular context. \n\nNb. Where an identifier takes the form of a URI owl:sameAs should be used."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class15",
+    "range" : "datatype12",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property3",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class2",
+    "range" : "class7"
+  }, {
+    "id" : "property2",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class3",
+    "range" : "class7"
+  }, {
+    "id" : "property1",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class1",
+    "range" : "class7"
+  }, {
+    "id" : "property83",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "foaf:name"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "comment" : {
+      "undefined" : "A name for an Agent that is not being used as a label."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "datatype1",
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property82",
+    "label" : {
+      "IRI-based" : "employee",
+      "undefined" : "schema:employee"
+    },
+    "iri" : "http://schema.org/employee",
+    "comment" : {
+      "undefined" : "Relates an Organization or Group to a person who works for the organization."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class10",
+    "range" : "class4",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property65",
+    "label" : {
+      "IRI-based" : "broader",
+      "undefined" : "skos:broader"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "comment" : {
+      "undefined" : "skos:broader (alongside the inverse skos:narrower) enables thesaurus-like hierarchical relationships, relating a concept to a concept with a broader meaning. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class9",
+    "range" : "class9",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property41",
+    "label" : {
+      "IRI-based" : "P15_was_influenced_by",
+      "undefined" : "crm:P15_was_influenced_by"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P15_was_influenced_by",
+    "comment" : {
+      "undefined" : "Relates an Agent or Event to significant concepts, events or agents that are thought to have influenced the Agent or Event."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class11",
+    "range" : "class11",
+    "inverse" : "property60",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property108",
+    "label" : {
+      "IRI-based" : "end",
+      "undefined" : "edm:end"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/end",
+    "comment" : {
+      "undefined" : "Contains the end date of a group or timespan.It is recommended that  dates conform to ISO 8601"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class20",
+    "range" : "literal26",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property97",
+    "label" : {
+      "IRI-based" : "lat",
+      "undefined" : "wgs84_pos:lat"
+    },
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "comment" : {
+      "undefined" : "The latitude of a Place in decimal degrees. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class3",
+    "range" : "datatype15",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property39",
+    "label" : {
+      "IRI-based" : "narrowMatch",
+      "undefined" : "skos:narrowMatch"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrowMatch",
+    "comment" : {
+      "undefined" : "skos:narrowMatch, like skos:narrower, is used to relate a concept to another with a narrower meaning. It is used where the related concepts are in different concept schemes."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class9",
+    "range" : "class9",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property73",
+    "label" : {
+      "IRI-based" : "P60482",
+      "undefined" : "rdau:associatedInstitution"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60482",
+    "comment" : {
+      "undefined" : "Relating an Organization or Group with another organization or group with which it is associated. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class10",
+    "range" : "class10",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property61",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "undefined" : "dcterms:hasPart"
+    },
+    "iri" : "http://purl.org/dc/terms/hasPart",
+    "comment" : {
+      "undefined" : "dcterms:hasPart is used to relate an Event, Place, Timespan, Group, or Organization to an associated resource of the same class (or to another Agent in the case of Group or Organization) that is part of it."
+    },
+    "attributes" : [ "external", "transitive" ],
+    "domain" : "class14",
+    "range" : "class14",
+    "inverse" : "property55",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property96",
+    "label" : {
+      "IRI-based" : "givenName",
+      "undefined" : "foaf:givenName"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/givenName",
+    "comment" : {
+      "undefined" : "The given name of the Person."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "datatype14",
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property95",
+    "label" : {
+      "IRI-based" : "strength",
+      "undefined" : "dbpedia:strength"
+    },
+    "iri" : "http://dbpedia.org/ontology/strength",
+    "comment" : {
+      "undefined" : "Information about the number of participants involved in an event. It is not limited to a single number (or even a set of numbers), as the information sources often contain additional information. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "datatype13",
+    "superproperty" : [ "property116" ]
+  }, {
+    "id" : "property101",
+    "label" : {
+      "IRI-based" : "long",
+      "undefined" : "wgs84_pos:long"
+    },
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "comment" : {
+      "undefined" : "The longitude of a Place in decimal degrees. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class3",
+    "range" : "datatype19",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property80",
+    "label" : {
+      "IRI-based" : "narrower",
+      "undefined" : "skos:narrower"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
+    "comment" : {
+      "undefined" : "skos:narrower (alongside the inverse skos:broader) enables thesaurus-like hierarchical relationships, relating a concept to a concept with a narrower meaning. \n"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class9",
+    "range" : "class9",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property99",
+    "label" : {
+      "IRI-based" : "alt",
+      "undefined" : "wgs84_pos:alt"
+    },
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+    "comment" : {
+      "undefined" : "The altitude of a Place in metres."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class3",
+    "range" : "datatype17",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property36",
+    "label" : {
+      "IRI-based" : "relatedMatch",
+      "undefined" : "skos:relatedMatch"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#relatedMatch",
+    "comment" : {
+      "undefined" : "skos:relatedMatch, like skos:related, is used to relate concepts with associated meanings. It is used where the related concepts are in different concept schemes."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class9",
+    "range" : "class9",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property50",
+    "label" : {
+      "IRI-based" : "crm:P11i_participated_in",
+      "undefined" : "crm:P11i_participated_in"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontology/elementset/cedm/crm:P11i_participated_in",
+    "comment" : {
+      "undefined" : "Relates an Event to an agent that participated in the event."
+    },
+    "domain" : "class8",
+    "range" : "class7",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property53",
+    "label" : {
+      "IRI-based" : "spouse",
+      "undefined" : "schema:spouse"
+    },
+    "iri" : "http://schema.org/spouse",
+    "comment" : {
+      "undefined" : "Relating a Person to their spouse."
+    },
+    "attributes" : [ "external", "symmetric" ],
+    "domain" : "class4",
+    "range" : "class4",
+    "superproperty" : [ "property76" ]
+  }, {
+    "id" : "property78",
+    "label" : {
+      "IRI-based" : "occuredAt",
+      "undefined" : "edm:occuredAt"
+    },
+    "iri" : "http://www.europeana.eu/schemas/edm/occuredAt",
+    "comment" : {
+      "undefined" : "edm:occuredAt relates an Event to to the Timespan when it occurred. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "class1",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property92",
+    "label" : {
+      "IRI-based" : "P60492",
+      "undefined" : "rdau:biographicalInformation"
+    },
+    "iri" : "http://www.rdaregistry.info/Elements/u/#P60492",
+    "comment" : {
+      "undefined" : "Biographical information about an Agent."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "datatype10",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property75",
+    "label" : {
+      "IRI-based" : "knows",
+      "undefined" : "foaf:knows"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/knows",
+    "comment" : {
+      "undefined" : "Relating the Person to another person who they know. It indicates a level of reciprocity people the people (i.e., if person A knows person B, then person B knows person A), and is used as an alternative to more potentially subjective relationships (e.g., dbpedia-owl:friend, dbpedia-owl:opponent, schema:colleague)"
+    },
+    "attributes" : [ "external", "symmetric" ],
+    "domain" : "class4",
+    "range" : "class4",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property98",
+    "label" : {
+      "IRI-based" : "hiddenLabel",
+      "undefined" : "skos:hiddenLabel"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#hiddenLabel",
+    "comment" : {
+      "undefined" : "For search and indexing purposes it is also possible to include hidden labels that should not be displayed to users. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "datatype16",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property56",
+    "label" : {
+      "IRI-based" : "allegiance",
+      "undefined" : "dbpedia:allegiance"
+    },
+    "iri" : "http://dbpedia.org/ontology/allegiance",
+    "comment" : {
+      "undefined" : "The country or agent which the Person served. This is a more specific type of relationship than rdau:P60063 (rdau:countryAssociatedWithTheAgent.en) or rdau:P60095 (rdau:affiliation). Multiple allegiances should make use of skos:note from the Agent class to clarify any potential ambiguity."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "class13",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property43",
+    "label" : {
+      "IRI-based" : "related",
+      "undefined" : "skos:related"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#related",
+    "comment" : {
+      "undefined" : "Similar to the ‘related term’ relationship in the traditional thesaurus, it relates concepts with associated meanings in the same concept scheme. "
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class9",
+    "range" : "class9",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property42",
+    "label" : {
+      "IRI-based" : "children",
+      "undefined" : "schema:children"
+    },
+    "iri" : "http://schema.org/children",
+    "comment" : {
+      "undefined" : "Relates a Person to a child of that person. It the inverse of schema:parent."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "class4",
+    "inverse" : "property70",
+    "superproperty" : [ "property76" ]
+  }, {
+    "id" : "property63",
+    "label" : {
+      "IRI-based" : "P107_has_current_or_former_member",
+      "undefined" : "crm:P107_has_current_or_former_member"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P107_has_current_or_former_member",
+    "comment" : {
+      "undefined" : "Relates an Organization or Group to a person who is (or was) a member of the organization/group."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class10",
+    "range" : "class4",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property55",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "dcterms:isPartOf"
+    },
+    "iri" : "http://purl.org/dc/terms/isPartOf",
+    "comment" : {
+      "undefined" : "dcterms:isPartOf is used to relate an Agent, Event, Place, or Timespan to an associated resource of the same class that it is part of."
+    },
+    "attributes" : [ "external", "transitive" ],
+    "domain" : "class12",
+    "range" : "class12",
+    "inverse" : "property61",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property79",
+    "label" : {
+      "IRI-based" : "P120i_occurs_after",
+      "undefined" : "crm:P120i_occurs_after"
+    },
+    "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P120i_occurs_after",
+    "comment" : {
+      "undefined" : "Relates an Event with another event that occurs before it."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class7",
+    "range" : "class7",
+    "inverse" : "property38",
+    "superproperty" : [ "property67" ]
+  }, {
+    "id" : "property69",
+    "label" : {
+      "IRI-based" : "hasStartCalendar",
+      "undefined" : "cedm:hasStartCalendar"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontology/elementset/cedm/hasStartCalendar",
+    "comment" : {
+      "undefined" : "Associates a calendar with the start of the Timespan."
+    },
+    "domain" : "class1",
+    "range" : "class9"
+  }, {
+    "id" : "property89",
+    "label" : {
+      "IRI-based" : "creator",
+      "undefined" : "dc:creator"
+    },
+    "iri" : "http://purl.org/dc/elements/1.1/creator",
+    "comment" : {
+      "undefined" : "Provides the name of the creator of a concept scheme."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "datatype7",
+    "superproperty" : [ "property93" ]
+  }, {
+    "id" : "property48",
+    "label" : {
+      "IRI-based" : "exactMatch",
+      "undefined" : "skos:exactMatch"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+    "comment" : {
+      "undefined" : "skos:exactMatch links two concepts in different concept schemes that may be used interchangeably in many cases. It is a sub-property of skos:closeMatch.\n"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class9",
+    "range" : "class9",
+    "superproperty" : [ "property57" ]
+  } ]
+}

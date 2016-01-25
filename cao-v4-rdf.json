@@ -1,0 +1,4645 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.2.0), http://vowl.visualdataweb.org",
+  "namespace" : [ ],
+  "header" : {
+    "languages" : [ "IRI-based", "it", "undefined", "fr", "en", "es", "ja" ],
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao"
+  },
+  "metrics" : {
+    "classCount" : 40,
+    "datatypeCount" : 20,
+    "objectPropertyCount" : 45,
+    "datatypePropertyCount" : 20,
+    "propertyCount" : 65,
+    "nodeCount" : 60,
+    "axiomCount" : 367,
+    "individualCount" : 2
+  },
+  "class" : [ {
+    "id" : "class24",
+    "type" : "externalclass"
+  }, {
+    "id" : "class2",
+    "type" : "externalclass"
+  }, {
+    "id" : "class7",
+    "type" : "externalclass"
+  }, {
+    "id" : "class21",
+    "type" : "externalclass"
+  }, {
+    "id" : "class40",
+    "type" : "externalclass"
+  }, {
+    "id" : "class12",
+    "type" : "externalclass"
+  }, {
+    "id" : "class27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class36",
+    "type" : "externalclass"
+  }, {
+    "id" : "class9",
+    "type" : "externalclass"
+  }, {
+    "id" : "class26",
+    "type" : "externalclass"
+  }, {
+    "id" : "class20",
+    "type" : "externalclass"
+  }, {
+    "id" : "class15",
+    "type" : "externalclass"
+  }, {
+    "id" : "class18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class23",
+    "type" : "externalclass"
+  }, {
+    "id" : "class39",
+    "type" : "externalclass"
+  }, {
+    "id" : "class37",
+    "type" : "externalclass"
+  }, {
+    "id" : "class6",
+    "type" : "externalclass"
+  }, {
+    "id" : "class35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class19",
+    "type" : "externalclass"
+  }, {
+    "id" : "class1",
+    "type" : "externalclass"
+  }, {
+    "id" : "class25",
+    "type" : "externalclass"
+  }, {
+    "id" : "class34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class22",
+    "type" : "externalclass"
+  }, {
+    "id" : "class29",
+    "type" : "externalclass"
+  }, {
+    "id" : "class16",
+    "type" : "externalclass"
+  }, {
+    "id" : "class11",
+    "type" : "externalclass"
+  }, {
+    "id" : "class10",
+    "type" : "externalclass"
+  }, {
+    "id" : "class8",
+    "type" : "externalclass"
+  }, {
+    "id" : "class5",
+    "type" : "externalclass"
+  }, {
+    "id" : "class32",
+    "type" : "externalclass"
+  }, {
+    "id" : "class4",
+    "type" : "externalclass"
+  }, {
+    "id" : "class31",
+    "type" : "externalclass"
+  }, {
+    "id" : "class3",
+    "type" : "externalclass"
+  }, {
+    "id" : "class33",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class30",
+    "type" : "externalclass"
+  }, {
+    "id" : "class14",
+    "type" : "externalclass"
+  }, {
+    "id" : "class13",
+    "type" : "externalclass"
+  }, {
+    "id" : "class38",
+    "type" : "externalclass"
+  }, {
+    "id" : "class28",
+    "type" : "externalclass"
+  }, {
+    "id" : "class52",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "class51",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "class43",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "thing6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing5",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "class44",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "class48",
+    "type" : "owl:unionOf"
+  } ],
+  "classAttribute" : [ {
+    "id" : "class24",
+    "label" : {
+      "IRI-based" : "ConventionOrStandard",
+      "undefined" : "Convention"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/ConventionOrStandard",
+    "comment" : {
+      "undefined" : "Convention declaration. Represents a concept, a convention used in description of the institution. \n\nCorresponds to /control/conventionDeclaration\n\nin CAO it is used as a concept belonging to the Concept schema of conventions (see cao:ConventionOrStandardScheme ) "
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class29" ],
+    "instances" : 0
+  }, {
+    "id" : "class2",
+    "label" : {
+      "IRI-based" : "RepositoryAccess",
+      "undefined" : "Access Type"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/RepositoryAccess",
+    "comment" : {
+      "undefined" : "Type of access to the material/data in the repository. \n\nEAG@CENDARI thus CAO allows for two types (modelled as subclasses) of repository access:\n\nConditionalRepositoryAccess\nFreeRepositoryAccess\n\nIts properties allow to additionally describe the terms of use or  potentially provide URI to the document containing the terms of use.\n\nhasAccess notes property of the Repository defines which kind of repository access a repository offers.\n\nThis class practically corresponds to the element /repository/access of the Cendari@EAG and APEX EAG 2012"
+    },
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class19", "class26" ],
+    "superClasses" : [ "class29" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "RepositoryAccess is ",
+        "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "NB:\nThe type of access is at the moment provided at a repository level. Potentially, repository access can be actually become a property of  repository holdings.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class7",
+    "label" : {
+      "IRI-based" : "ISO3166-1",
+      "undefined" : "Country code"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/ISO3166-1",
+    "comment" : {
+      "undefined" : "Individuals of this class are country codes corresponding to ISO 3166-1-alpha-2 code. \n"
+    },
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "NB\n\nClass needs addition of properties country name, country code and eventually some  geo information. \n\nNeed manual generation of individuals, as there is no officially published RDF vocabulary.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class21",
+    "label" : {
+      "IRI-based" : "FormalOrganization",
+      "it" : "Organizzazione formale",
+      "fr" : "Organisation Formelle",
+      "en" : "Formal Organization",
+      "es" : "organización formal"
+    },
+    "iri" : "http://www.w3.org/ns/org#FormalOrganization",
+    "comment" : {
+      "it" : "Un'organizzazione che è riconosciuta a livello mondiale o, in generale, all'interno di una qualche giurisdizione, e che quindi possiede diritti e responsabilità. Ad esempio aziende, enti governativi, associazioni di volontariato. Si noti che questa è una superclasse di `gr:BusinessEntity` e che quindi è raccomandabile usare il vocabolario GoodRelations per esprimere classificazioni di tipo industriale e commerciale come DUNS e NAICS.",
+      "fr" : "Une Organisation reconnue, en particulier par les juridictions locales, ayant des droits et des responsabilités. Exemples : entreprises, association à but non-lucratif, collectivité, église. Notez que c'est une super-classe de `gr:BusinessEntity` et qu'il est recommandé d'utiliser le vocabulaire GoodRelations pour indiquer les classifications économiques comme le code NACE.",
+      "en" : "An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a Corporation, Charity, Government or Church. Note that this is a super class of `gr:BusinessEntity` and it is recommended to use the GoodRelations vocabulary to denote Business classifications such as DUNS or NAICS.",
+      "es" : "Organización reconocida a nivel mundial, en particular en jurisdicciones legales, con derechos y responsabilidades asociadas. Algunos ejemplos son: organización corporativa, organización benéfica, organización gubernamental, organización religiosa. Se debe tener en cuenta que ésta es una superclase de `gr:BusinessEntity` y que se recomienda el uso del vocabulario GoodRelations para referirse a clasificaciones de negocios tales como DUNS o NAICS.",
+      "ja" : "???????????????????????????????????????????????????????????????????"
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/org",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class40",
+    "label" : {
+      "IRI-based" : "RepositoryServices",
+      "undefined" : "Repository Services"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/RepositoryServices",
+    "comment" : {
+      "undefined" : "Types of services a repository offers. There can be different types of services, each with own contact information. They are modelled as subclasses of cao:RepositoryServices.\n\nCorresponds to /repository/services/<servicetype> elements of APEX EAG 2012\n\n\n"
+    },
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class9", "class30", "class5", "class1", "class39" ],
+    "superClasses" : [ "class29" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "NB: \n\nCendari@eag assumes only the SearchRoomService, while APEX EAG 2012 offers a list of more services. The latter is considered for  CAO ontology.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class12",
+    "label" : {
+      "IRI-based" : "RepositoryType",
+      "undefined" : "Repository Type"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/RepositoryType",
+    "comment" : {
+      "undefined" : "The type of repository. CAO models it as a skos:Concept, taken from the cao:CendariRepositoryTypesScheme concept scheme.\n\nEnumerated list is as follows (same in both Cendari@eag and EAG APEX 2012):\n\n-National archives\n-Regional archives\n-County/local authority archives\n-Municipal archives\n-Specialised governmental archives\n-Private persons and family archives\n-Church and religious archives\n-Business archives\n-University and research archives\n-Media archives\n-Archives of political parties, of popular/labour movement and other non-governmental organisations, associations, agencies and foundations\n-Specialised non-governmental archives and archives of other cultural (heritage) institutions.\n\nCorresponds to the element archguide/identity/repositoryType, but is related as a property of the Repository and not as a property of the top level Institution described by EAG document."
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class29" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "ToBeDiscussed: \nThere is a small confusion imho with the  EAG (at both Cendari&APEX) .\nOn the InstitutionIdentity, there is a claim it is describes the repository identity and even has a repositorId number. In fact, this repositorId number is an identifier for the Institution.\n\nidentity/repositoryType thus in EAG imho models the type of the institution and not the type of the repository. \n\nFurther, in /archguide/desc a user can describe several repositories by same institution, but does not precise the repositoryType at more granular level.\n\nCAO models this situation in a slightly different manner:\nrepositoryType is property of cao:Repository and not of cao:Institution. Each cao:Repository may be related to several instances of cao:RepositoryType via \"cao:isRepositoryOfType\". \n",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class27",
+    "label" : {
+      "IRI-based" : "RepositoryAddress",
+      "undefined" : "Address"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/RepositoryAddress",
+    "comment" : {
+      "undefined" : "Repository address of a repository of an archival institution.\nThis is subclass of vcard:Address, but it additionally includes some more properties which are not in vcard:Address definition. "
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class3" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "Corresponds to \n/archguide/desc/repositories/repository/location elemnt in CENDARI@EAG profile",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class36",
+    "label" : {
+      "IRI-based" : "Site",
+      "it" : "Sede",
+      "fr" : "Site",
+      "en" : "Site",
+      "es" : "sede"
+    },
+    "iri" : "http://www.w3.org/ns/org#Site",
+    "comment" : {
+      "it" : "Un ufficio o altra sede dovei l'organizzazione è situata. Molte organizzazione sono distribuite su più sedi e molte sedi ospitano più ubicazioni. Nella maggior parte dei casi un Site è una locazione fisica. Non si esclude la possibilità di indicare sedi non fisiche come ad esempio gli uffici virtuali. Le estensioni dell'ontologia potrebbero usare delle sottoclassi per rappresentare i tipi particolari di sede.",
+      "fr" : "Un établissement ou tout autre lieu dans lequel une Organisation est localisé. Beaucoup d'organisations sont dispersées à travers plusieurs sites. Dans la plupart des cas un Site sera un lieu physique. Toutefois, nous n'excluons pas la possibilité de sites non-physiques comme un bureau virtuel avec une boîte postale et un service de secrétariat mutualisé. Des extensions pourraient fournir des sous-classes pour décrire des types de sites particuliers.",
+      "en" : "An office or other premise at which the organization is located. Many organizations are spread across multiple sites and many sites will host multiple locations. In most cases a Site will be a physical location. However, we don't exclude the possibility of non-physical sites such as a virtual office with an associated post box and phone reception service. Extensions may provide subclasses to denote particular types of site.",
+      "es" : "Oficina, local o cualquier otro lugar en el que se encuentra una organización. Muchas organizaciones están distribuidas en varias sedes, que a su vez están repartidas en distintas ubicaciones. En muchos casos una sede será un sitio o local físico. Sin embargo, no se excluye la posibilidad de lugares no físicos como oficinas virtuales con los correspondientes apartados de correo y servicio de atención telefónica. Se pueden añadir más subtipos mediante extensiones para incluir tipos especiales de lugares.",
+      "ja" : "???????????????????????????????????????????????????????????"
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/org",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class35" ],
+    "instances" : 0
+  }, {
+    "id" : "class9",
+    "label" : {
+      "IRI-based" : "InternetAccessService",
+      "undefined" : "Internet Access"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/InternetAccessService",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class26",
+    "label" : {
+      "IRI-based" : "FreeRepositoryAccess",
+      "undefined" : "Free"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/FreeRepositoryAccess",
+    "comment" : {
+      "undefined" : "Access and use of the repository material is free, and there are no restrictive conditions."
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class2" ],
+    "instances" : 0
+  }, {
+    "id" : "class20",
+    "label" : {
+      "IRI-based" : "MaintenanceAgency",
+      "undefined" : "Maintenance Agency"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/MaintenanceAgency",
+    "comment" : {
+      "undefined" : "Maintenance agency responsible for the maintenance of the EAG Document.\nIn case of data maintained by Cendari, default agency is Cendari and agencyCode is EU-Cendari.\n\nAlternatively, APEX may be a maintenance agency.\n\ncorresponds to /control/maintenanceAgency part of Cendari@EAG and APEX EAG 2012"
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class25" ],
+    "instances" : 0
+  }, {
+    "id" : "class15",
+    "label" : {
+      "IRI-based" : "Audience",
+      "undefined" : "Audience"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Audience",
+    "comment" : {
+      "undefined" : "This is a class which contains possiible values for the types of usage of the archival  description. \n.\nFor archival institution descriptions, originally, allowed are \"internal\" or \"external\" as individuals, to point to the internal/external use of the Institutional description.\nBy default \"external\" should be used.\n\nMaps to eag@audience attribute of the top level eag element from Cendari@EAG profile"
+    },
+    "attributes" : [ "external" ],
+    "instances" : 2,
+    "individuals" : [ {
+      "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/External",
+      "labels" : {
+        "IRI-based" : "http://resources.cendari.dariah.eu/ontologies/cao/External"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Internal",
+      "labels" : {
+        "IRI-based" : "http://resources.cendari.dariah.eu/ontologies/cao/Internal"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class18",
+    "label" : {
+      "IRI-based" : "Contact",
+      "undefined" : "Contact"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Contact",
+    "comment" : {
+      "undefined" : "Contact information for a repository service of an archival institution.\n\nSome services have  partial contact information such as email. phone. ocuppation. Some services additionally expose real persons behind. Thus a contact may have related a Person (with its own properties).\nSee also cao:isPerson property.\n\nCorresponds to /services/searchroom/contact element of CENDARI@EAG profile. Added to all services (not only search room)\n"
+    },
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "NB: I think here we should also have an address, but that is obviously somewhere else in the institution description.\nAdditional proposal here is to have one Contact class with all necessary infos... TBD:..",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class23",
+    "label" : {
+      "IRI-based" : "ConventionOrStandardScheme",
+      "undefined" : "Conventions"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/ConventionOrStandardScheme",
+    "comment" : {
+      "undefined" : "Conventions and Standards concept scheme.\n\nUsed in cao:hasConventions to list all conventions and standards used within the EAG Document"
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class22" ],
+    "instances" : 0
+  }, {
+    "id" : "class39",
+    "label" : {
+      "IRI-based" : "TechnicalService",
+      "undefined" : "Technical"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/TechnicalService",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class37",
+    "label" : {
+      "IRI-based" : "LanguageDeclaration",
+      "undefined" : "Language Declaration"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/LanguageDeclaration",
+    "comment" : {
+      "undefined" : "\nContains information about the Languages and scripts used in the description of an archival institution.\n\nCorresponds to /control/languagedeclarations/languagedeclaration element of CENDARI@EAG profile."
+    },
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "Languages already reference existing ISO vocabulary. Same should be done for Scripts (i.e. create a vocabulary).\nFor start  Latin, Cyrilic to be defined as individuals.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class6",
+    "label" : {
+      "IRI-based" : "Bundle"
+    },
+    "iri" : "http://www.w3.org/ns/prov#Bundle",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class28" ],
+    "instances" : 0
+  }, {
+    "id" : "class35",
+    "label" : {
+      "IRI-based" : "Repository",
+      "undefined" : "Repository"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Repository",
+    "comment" : {
+      "undefined" : "A Repository of an archival institution\nAn institution may have more than one repositories which offer data services. An example for an institution is the NKP, and the repositories within are different archives represented  by Manuscriptorium. \n\n"
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class36" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "RepositoryType \nboth Cendari@EAG and APEX EAG2012 relate the repository type information on repository institution level.  This may be due to the XML-based structure.\n\nWithin CAO Repository type is added as a property of the repository itself - and one can associate more values for a repository. Thus the information about the types of repository of the institution is available by querying for institution, but as well additional level of granularity is provided. \n\nAPEX EAG2012\nCendari repository information is not as detailed as APEX EAG 2012 information about the repository. \nIf needed, that can be extended.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class19",
+    "label" : {
+      "IRI-based" : "ConditionalRepositoryAccess",
+      "undefined" : "Conditional access"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/ConditionalRepositoryAccess",
+    "comment" : {
+      "undefined" : "There are restrictive conditions for use and access to the repository material."
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class2" ],
+    "instances" : 0
+  }, {
+    "id" : "class1",
+    "label" : {
+      "IRI-based" : "SearchRoomService",
+      "undefined" : "Search room"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/SearchRoomService",
+    "comment" : {
+      "undefined" : "Provides a description of the search room and facilities available.\n\n"
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class25",
+    "label" : {
+      "IRI-based" : "Organization",
+      "it" : "Organizzazione",
+      "fr" : "Organisation",
+      "en" : "Organization",
+      "es" : "organización"
+    },
+    "iri" : "http://www.w3.org/ns/org#Organization",
+    "comment" : {
+      "it" : "Rappresenta una collezione di persone organizzate all'interno di una communità o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi membri appartenenti al gruppo e  può agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l'Organization mediante le proprietà di SKOS. In particolare, `skos:prefLabel` per il nome principale (possibilmente un nome legalmente riconosciuto)”, `skos:altLabel` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici.",
+      "fr" : "Représente un groupe de personnes organisées en communauté où tout autre forme de structure sociale, commerciale ou politique. Le groupe a un but commun ou une raison d'être qui va au-delà de la somme des personnes qui en font partie et peut agir en tant que \"Agent\". Les organisations sont souvent décomposables en structures hiérarchisées. Il est recommandé que des labels lexicaux SKOS soient utilisés pour nommer l'Organisation. En particulier `skos:prefLabel` pour le nom principal (en général le nom légal), `skos:altLabel` pour les noms alternatifs (marques, sigles, appellations familières) et `skos:notation` pour indiquer un code provenant d'une liste de code.",
+      "en" : "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_",
+      "es" : "Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o política. Dicho grupo tiene un objetivo o motivo común para su existencia que va más allá del conjunto de personas que lo forman y que puede actuar como “agente”. A menudo las organizaciones se pueden agrupar en estructuras jerárquicas. Se recomienda el uso de etiquetas de SKOS para denominar a cada “organización”. En concreto, `skos:prefLabel` para la denominación principal o recomendada (aquella reconocida legalmente, siempre que sea posible), `skos:altLabel` para denominaciones alternativas (nombre comercial, sigla, denominación por la que se conoce a la organización coloquialmente) y `skos:notation` para referirse al código que identifique a la organización en una lista de códigos. Denominaciones alternativas: _colectivo_ _corporación_ _grupo_",
+      "ja" : "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/org",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class17", "class20" ],
+    "instances" : 0
+  }, {
+    "id" : "class34",
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "comment" : {
+      "undefined" : "A person."
+    },
+    "isDefinedBy" : "http://xmlns.com/foaf/0.1/",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class17",
+    "label" : {
+      "IRI-based" : "Institution",
+      "undefined" : "Institution"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Institution",
+    "comment" : {
+      "undefined" : "Archive, Library, Museum etc. described with EAG"
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class8", "class29", "class25" ],
+    "instances" : 0
+  }, {
+    "id" : "class22",
+    "label" : {
+      "IRI-based" : "ConceptScheme",
+      "en" : "Concept Scheme"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class10", "class14", "class23" ],
+    "annotations" : {
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A concept scheme may be defined to include concepts from different sources.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of concepts, optionally including statements about semantic relationships between those concepts.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class29",
+    "label" : {
+      "IRI-based" : "Concept",
+      "undefined" : "Concept",
+      "en" : "Concept"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class24", "class17", "class2", "class40", "class12", "class31" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An idea or notion; a unit of thought.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 184,
+    "individuals" : [ {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/he",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/he"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ch",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ch"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ja",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ja"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/rm",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/rm"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/vo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/vo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bm",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bm"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sm",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sm"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/oc",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/oc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lt",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ha",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ha"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/az",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/az"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ss",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ss"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/to",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/to"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/da",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/da"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ae",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ae"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/te",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/te"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hy",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hy"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/pa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/pa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/el",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/el"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ig",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ig"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/se",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/se"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/th",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/th"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ik",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ik"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/os",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/os"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sw",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sw"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/wa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/wa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/uk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/uk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ho",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ho"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/rw",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/rw"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/eo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/eo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/oj",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/oj"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kw",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kw"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fj",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fj"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ka",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ka"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ko",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ko"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ce",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ce"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/es",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/es"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/eu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/eu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/si",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/si"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kj",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kj"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nd",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nd"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/la",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/la"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/rn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/rn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ro",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ro"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/be",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/be"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lb",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lb"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ug",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ug"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/de",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/de"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ab",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ab"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hz",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hz"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/so",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/so"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cy",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cy"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ar",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ar"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/pt",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/pt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/no",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/no"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/xh",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/xh"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ta",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ta"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sc",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ng",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ng"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ca",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ca"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ty",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ty"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/my",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/my"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/vi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/vi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/pl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/pl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ff",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ff"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ml",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ml"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/am",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/am"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tw",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tw"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tt",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/co",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/co"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/jv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/jv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ky",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ky"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ie",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ie"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ku",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ku"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/aa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/aa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/zu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/zu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/st",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/st"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/it",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/it"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/na",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/na"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/om",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/om"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fy",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fy"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/qu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/qu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gd",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gd"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ve",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ve"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/et",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/et"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ru",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ru"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/km",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/km"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bs",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bs"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/zh",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/zh"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ak",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ak"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/yi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/yi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nb",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nb"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ks",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ks"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/uz",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/uz"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sq",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sq"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ia",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ia"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/en",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/en"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/av",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/av"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/br",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/br"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/yo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/yo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bh",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bh"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/za",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/za"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ts",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ts"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mt",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ms",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ms"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/is",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/is"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ga",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ga"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/or",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/or"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/as",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/as"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/li",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/li"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/an",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/an"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/su",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/su"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/wo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/wo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ht",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ht"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/iu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/iu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/dv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/dv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ur",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ur"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sd",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sd"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/af",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/af"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/dz",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/dz"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/id",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/id"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ki",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ki"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cs",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cs"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ba",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ba"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/pi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/pi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ay",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ay"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ny",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ny"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ii",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ii"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ln",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ln"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ee",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ee"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mh",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mh"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ne",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ne"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/io",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/io"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ps",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ps"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ti",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ti"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mk"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class16",
+    "label" : {
+      "IRI-based" : "InstitutionIdentity",
+      "undefined" : "Identity"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/InstitutionIdentity",
+    "comment" : {
+      "undefined" : "Identyfing information about an institution holds properties such as identifier, country code, former names of the institution etc.. \n\nCorresponds to archgude/identity element of the CENDARI@EAG profile.\n\n"
+    },
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "EAG understands several things under repository and this is where the confusion starts. \n\nWhile /eag/archguide/Identity provides some metadata imho the institution, it also provides an attribute named \"repositorId\" which according the EAG describes the \"repository\" -> but imho this should be the id of the institution - it is a confusing name. \nCAO does not change the name, but must clearly understand the difference. \n\n\n",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class11",
+    "label" : {
+      "IRI-based" : "Replace"
+    },
+    "iri" : "http://www.w3.org/ns/prov#Replace",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class38" ],
+    "instances" : 0
+  }, {
+    "id" : "class10",
+    "label" : {
+      "IRI-based" : "CendariRepositoryTypeScheme",
+      "undefined" : "Repository Types"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/CendariRepositoryTypeScheme",
+    "comment" : {
+      "undefined" : "Initial concepts here are same in both Cendari@eag and EAG APEX 2012:\n\n-National archives\n-Regional archives\n-County/local authority archives\n-Municipal archives\n-Specialised governmental archives\n-Private persons and family archives\n-Church and religious archives\n-Business archives\n-University and research archives\n-Media archives\n-Archives of political parties, of popular/labour movement and other non-governmental organisations, associations, agencies and foundations\n-Specialised non-governmental archives and archives of other cultural (heritage) institutions.\n\n\nCorresponds to the element archguide/identity/repositoryType.\nCAO relates it as a property of the Repository and not as a property of the top level Institution described by EAG document.\n\n"
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class22" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "Develop Repository Types Scheme",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class8",
+    "label" : {
+      "IRI-based" : "SpatialThing",
+      "undefined" : "Spatial Thing"
+    },
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class17" ],
+    "instances" : 0
+  }, {
+    "id" : "class5",
+    "label" : {
+      "IRI-based" : "RecreationalService",
+      "undefined" : "Recreation"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/RecreationalService",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class32",
+    "label" : {
+      "IRI-based" : "SourceInformation",
+      "undefined" : "Source"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/SourceInformation",
+    "comment" : {
+      "undefined" : "Represents the sources from where archival institution description is provided. \n\nEAG and EAG@CENDARI assume that information about the archival institution may be created without source information. \nThis ontology makes it more restrictire, thus a source information must always exist.\n\nFor a particular source, users may then create repository history notes (repositorhist) or holdings descriptions."
+    },
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "NB:\nCorresponds to several elements in EAG profile:\na) /control/sources from CENDARI@EAG profile\nb)/archguide/desc/repositorhist\nc)/archguide/desc/holdings\n\n",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class4",
+    "label" : {
+      "IRI-based" : "iso639-1_Language",
+      "en" : "ISO639-1 Language"
+    },
+    "iri" : "http://id.loc.gov/vocabulary/iso639-1/iso639-1_Language",
+    "comment" : {
+      "undefined" : "\n   \n<xhtml:div class=\"collectionAbout\" title=\"About the Linguistic System for ISO639-1 Entries:\" property=\"rdfs:comment\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\n    <xhtml:p>\n     An instance of an ISO639-1 Language.  A finite set of individuals are instances of an ISO639-1 Language.\n    </xhtml:p>\n   </xhtml:div>\n\n  "
+    },
+    "attributes" : [ "external" ],
+    "instances" : 184,
+    "individuals" : [ {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/eu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/eu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ab",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ab"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/wo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/wo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bs",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bs"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bh",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bh"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ur",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ur"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/pa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/pa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/qu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/qu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/om",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/om"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kj",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kj"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nb",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nb"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ba",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ba"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ff",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ff"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/az",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/az"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ie",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ie"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/en",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/en"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ve",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ve"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bm",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bm"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/to",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/to"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/os",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/os"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ce",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ce"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ms",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ms"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ha",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ha"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/la",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/la"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ee",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ee"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/dv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/dv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ru",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ru"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ho",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ho"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/oc",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/oc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/rm",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/rm"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fy",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fy"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hz",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hz"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sc",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/no",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/no"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sw",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sw"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ig",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ig"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sq",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sq"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/za",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/za"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tw",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tw"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/wa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/wa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/zu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/zu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/it",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/it"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/br",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/br"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ii",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ii"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lt",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hy",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hy"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/id",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/id"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/pi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/pi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ga",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ga"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/rw",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/rw"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ja",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ja"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ne",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ne"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/hi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/hi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ki",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ki"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ps",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ps"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gd",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gd"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/st",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/st"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ae",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ae"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ar",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ar"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ti",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ti"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/my",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/my"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/su",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/su"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/he",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/he"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/vi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/vi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/jv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/jv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/te",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/te"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/yi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/yi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/et",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/et"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ln",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ln"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/av",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/av"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ss",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ss"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/as",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/as"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tt",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cy",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cy"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ks",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ks"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/pt",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/pt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ht",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ht"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/dz",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/dz"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/gn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/gn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/li",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/li"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nd",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nd"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ka",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ka"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/si",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/si"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ko",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ko"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cs",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cs"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ky",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ky"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ug",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ug"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ay",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ay"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ng",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ng"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sm",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sm"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/uz",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/uz"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/bi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/bi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ty",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ty"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/rn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/rn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ro",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ro"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ik",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ik"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kw",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kw"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sd",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sd"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/aa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/aa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ta",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ta"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mh",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mh"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/vo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/vo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mt",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lg",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/se",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/se"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/or",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/or"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/am",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/am"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/de",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/de"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sa",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sa"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/af",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/af"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/be",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/be"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ca",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ca"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fj",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fj"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/th",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/th"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/yo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/yo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/pl",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/pl"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/tr",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/tr"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/sv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/sv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/eo",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/eo"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/is",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/is"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/an",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/an"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/iu",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/iu"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/fi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/fi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/el",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/el"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/zh",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/zh"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/cv",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/cv"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ts",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ts"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ch",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ch"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/km",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/km"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/nn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/nn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/oj",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/oj"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ny",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ny"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/da",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/da"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/es",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/es"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/na",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/na"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/io",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/io"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/kn",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/kn"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/lb",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/lb"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ml",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ml"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/mi",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/mi"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/co",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/co"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/so",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/so"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ak",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ak"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ku",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ku"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/uk",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/uk"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/xh",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/xh"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/iso639-1/ia",
+      "labels" : {
+        "IRI-based" : "http://id.loc.gov/vocabulary/iso639-1/ia"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class31",
+    "label" : {
+      "IRI-based" : "Topic",
+      "undefined" : "Topic"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Topic",
+    "comment" : {
+      "undefined" : "Topics covered by the Institution. It is a concept organized within  cao:CendariTopicScheme.\n\nCendari@EAG recommends only WW1 or Medieval. \nBy further development of the SKOS scheme however, topics can be further specialized."
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class29" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "TODO: develop Topics concept scheme",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class3",
+    "label" : {
+      "IRI-based" : "Address",
+      "en" : "Address"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#Address",
+    "comment" : {
+      "en" : "To specify the components of the delivery address for the  object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class27" ],
+    "instances" : 0
+  }, {
+    "id" : "class33",
+    "label" : {
+      "IRI-based" : "Contributor",
+      "undefined" : "Contributor"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Contributor",
+    "comment" : {
+      "undefined" : "Cendari contributor may be either a org:FormalOrganization or a foaf:Person.\nIn case of a foaf:Person, there is a posisbility to specify the affiliation (via cao:hasAffiliation org:FormalOrganization )"
+    },
+    "attributes" : [ "external" ],
+    "instances" : 0,
+    "union" : [ "class21", "class34" ]
+  }, {
+    "id" : "class30",
+    "label" : {
+      "IRI-based" : "LibraryService",
+      "undefined" : "Library"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/LibraryService",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class14",
+    "label" : {
+      "IRI-based" : "CendariTopicScheme",
+      "undefined" : "Topics"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/CendariTopicScheme",
+    "comment" : {
+      "undefined" : "Cendari@EAG recommends only WW1 or Medieval. \nBy further development of the SKOS scheme however, topics can be further specialized."
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class22" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "TODO: develop Topic concept scheme",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class13",
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "comment" : {
+      "undefined" : "Records every change made in the description of the institution, the date, the person responsible for the changes and the type of event. There are as many maintenance events as required.\n\nhasAgent property relates it to corresponding Contributor (which may be a foaf:Person or org:FormalOrganization) within Cendari. \n"
+    },
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "undefined",
+        "value" : "corresponds to /control/MaintenanceHistory/MaintenanceEvent  from Cendari@EAG and APEX EAG2012\n\nIs equivalent to prov:Activity included within MaintenanceHistory (which is modelled as a prov:Bundle).\n\nTypes of maintenance Events are modelled as prov:Activity subclasses. \n\nCENDARI EAG specializes prov:Replace type of activity, as cao:Delete - to express deletion of an institutional description (soft deletion).",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class38",
+    "label" : {
+      "IRI-based" : "Delete",
+      "undefined" : "Delete"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Delete",
+    "comment" : {
+      "undefined" : "Type of activity which expresses \"soft\" deletion of an entity to which it is associated. In CENDARI case, it is part of the institution maintenance history, thus expresses deletion of the institutional description.\n\nIn real terms, this would mean the institutional description record is withdrawn from usage and not physically deleted. "
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class11" ],
+    "instances" : 0
+  }, {
+    "id" : "class28",
+    "label" : {
+      "IRI-based" : "MaintenanceHistory",
+      "undefined" : "Maintenance History"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/MaintenanceHistory",
+    "comment" : {
+      "undefined" : "Records maintenance information about the Institutional description such as who created the description, when it was modified, when it was published or deleted.\n\nNormally, should be taken as part of the repository internal information.\n\nCorresponds to /control/maintenanceHistory in Cendari@EAG and APEX EAG 2012 "
+    },
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class6" ],
+    "instances" : 0
+  }, {
+    "id" : "class52",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "intersection" : [ "literal21", "dataoneof22" ]
+  }, {
+    "id" : "class51",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "intersection" : [ "literal12", "dataoneof13" ]
+  }, {
+    "id" : "class43",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "intersection" : [ "class33", "class34" ]
+  }, {
+    "id" : "thing6",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing7",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing1",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing4",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing5",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing2",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing3",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "class44",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class35", "class17" ]
+  }, {
+    "id" : "class48",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "union" : [ "class18", "class27" ]
+  } ],
+  "datatype" : [ {
+    "id" : "datatype15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal1",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal10",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal20",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "dataoneof22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "dataoneof13",
+    "type" : "rdfs:Datatype"
+  } ],
+  "datatypeAttribute" : [ {
+    "id" : "datatype15",
+    "label" : {
+      "IRI-based" : "dateTime"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  }, {
+    "id" : "datatype16",
+    "label" : {
+      "IRI-based" : "anyURI"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  }, {
+    "id" : "literal9",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal4",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal3",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal12",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal6",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal14",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal5",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal17",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal19",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal2",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal18",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal1",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal21",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal10",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal20",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal11",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype8",
+    "label" : {
+      "IRI-based" : "anyURI"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  }, {
+    "id" : "datatype7",
+    "label" : {
+      "IRI-based" : "dateTime"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  }, {
+    "id" : "dataoneof22",
+    "label" : {
+      "IRI-based" : "Data One Of"
+    },
+    "comment" : {
+      "IRI-based" : "Dummy implementation. Not the real extracted element because not supported currently."
+    }
+  }, {
+    "id" : "dataoneof13",
+    "label" : {
+      "IRI-based" : "Data One Of"
+    },
+    "comment" : {
+      "IRI-based" : "Dummy implementation. Not the real extracted element because not supported currently."
+    }
+  } ],
+  "property" : [ {
+    "id" : "property60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "property2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property1",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property36",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "id" : "property60",
+    "label" : {
+      "IRI-based" : "hasHoldingsInTopic",
+      "undefined" : "holdings"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasHoldingsInTopic",
+    "attributes" : [ "external" ],
+    "domain" : "class44",
+    "range" : "class31",
+    "superproperty" : [ "property39" ]
+  }, {
+    "id" : "property74",
+    "label" : {
+      "IRI-based" : "repositoryHistoryNote",
+      "undefined" : "History"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/repositoryHistoryNote",
+    "comment" : {
+      "undefined" : "corresponds to /desc/repositorhist/descriptiveNote of CENDARI@EAG \n\nA note on repository history, based on referenced source"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class32",
+    "range" : "literal4",
+    "superproperty" : [ "property86" ],
+    "disjoint" : [ "property88", "property72" ]
+  }, {
+    "id" : "property68",
+    "label" : {
+      "IRI-based" : "hasAudience",
+      "undefined" : "audience"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasAudience",
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class15",
+    "superproperty" : [ "property39" ]
+  }, {
+    "id" : "property54",
+    "label" : {
+      "IRI-based" : "hasSite",
+      "it" : "ha sede",
+      "fr" : "a un site",
+      "en" : "has site",
+      "es" : "tiene sede en"
+    },
+    "iri" : "http://www.w3.org/ns/org#hasSite",
+    "comment" : {
+      "it" : "Indica la sede in cui l'Organization ha una qualche presenza anche in modo indiretto (ad esempio un ufficio virtuale). È l'inverso di `org:siteOf`.",
+      "fr" : "Indique un site sur lequel l'Organisation possède une présence, même indirecte (domiciliation, boite postale). Inverse de `org:siteOf`.",
+      "en" : "Indicates a site at which the Organization has some presence even if only indirect (e.g. virtual office or a professional service which is acting as the registered address for a company). Inverse of `org:siteOf`.",
+      "es" : "Lugar en donde la organización tiene algún tipo de presencia, incluso si es de forma indirecta (por ejemplo, una oficina virtual o servicio profesional que hagan la función de dirección registrada de la compañía). Es la relación inversa de `org:siteOf`.",
+      "ja" : "????????????????????????????????????????????????????????????????????????????????????"
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/org",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property45" ]
+  }, {
+    "id" : "property28",
+    "label" : {
+      "IRI-based" : "hasFax"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasFax",
+    "attributes" : [ "external" ],
+    "domain" : "class27",
+    "range" : "thing1",
+    "superproperty" : [ "property56" ]
+  }, {
+    "id" : "property48",
+    "label" : {
+      "IRI-based" : "hasIdentity",
+      "undefined" : "identity"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasIdentity",
+    "comment" : {
+      "undefined" : "see cao:InstitutionIdentity"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class16",
+    "subproperty" : [ "property64", "property34" ],
+    "disjoint" : [ "property64", "property34" ]
+  }, {
+    "id" : "property65",
+    "label" : {
+      "IRI-based" : "hasLanguage",
+      "undefined" : "language"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasLanguage",
+    "comment" : {
+      "undefined" : "Ranges to values from ISO-639-1 language vocabulaty."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class37",
+    "range" : "class4"
+  }, {
+    "id" : "property50",
+    "label" : {
+      "IRI-based" : "isRepositoryOfType",
+      "undefined" : "type"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/isRepositoryOfType",
+    "attributes" : [ "external" ],
+    "domain" : "class35",
+    "range" : "class12",
+    "superproperty" : [ "property39" ]
+  }, {
+    "id" : "property57",
+    "label" : {
+      "IRI-based" : "hasPhone"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasPhone",
+    "attributes" : [ "external" ],
+    "domain" : "class48",
+    "range" : "thing6",
+    "superproperty" : [ "property56" ]
+  }, {
+    "id" : "property81",
+    "label" : {
+      "IRI-based" : "termsOfUseNote",
+      "undefined" : "termsOfUse"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/termsOfUseNote",
+    "comment" : {
+      "undefined" : "Incorporates embodied textual information (and links) to the terms of use, archival law or fee structure.\n\nCan be used as complement or solely to the cao:termsOfUseURI"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "literal11",
+    "superproperty" : [ "property86" ]
+  }, {
+    "id" : "property66",
+    "label" : {
+      "IRI-based" : "hasTopConcept",
+      "en" : "has top concept"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property30", "property33", "property59" ]
+  }, {
+    "id" : "property29",
+    "label" : {
+      "IRI-based" : "hasService",
+      "undefined" : "service"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasService",
+    "attributes" : [ "external" ],
+    "domain" : "class35",
+    "range" : "class40"
+  }, {
+    "id" : "property64",
+    "label" : {
+      "IRI-based" : "hasNonPreferredName",
+      "undefined" : "non preferred name"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasNonPreferredName",
+    "comment" : {
+      "undefined" : "see cao:InstitutionIdentity"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class16",
+    "superproperty" : [ "property48" ],
+    "disjoint" : [ "property48", "property34" ]
+  }, {
+    "id" : "property32",
+    "label" : {
+      "IRI-based" : "hasAffiliation",
+      "undefined" : "affiliation"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasAffiliation",
+    "attributes" : [ "external" ],
+    "domain" : "class43",
+    "range" : "class21"
+  }, {
+    "id" : "property52",
+    "label" : {
+      "IRI-based" : "hasLanguageDeclaration",
+      "undefined" : "declaration"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasLanguageDeclaration",
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class37"
+  }, {
+    "id" : "property90",
+    "label" : {
+      "IRI-based" : "hasScript",
+      "undefined" : "Script"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasScript",
+    "comment" : {
+      "undefined" : "Scripts in Use\nTODO: make separate class and generate vocabulary  from ISO 15924 List (create concept scheme for scripts in  ISO 15924 )"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class37",
+    "range" : "class52"
+  }, {
+    "id" : "property89",
+    "label" : {
+      "IRI-based" : "restAccess",
+      "undefined" : "Access"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/restAccess",
+    "comment" : {
+      "undefined" : "Note about the conditions of Acess to the repository\n\nCan be added and provides detailed information about the “access policies, including any restrictions and/or regulations for the use of materials and facilities. Information about registration, appointments, readers’ tickets, letters of introduction, admission fees, etc. [can be recorded here]. Where appropriate, make reference to the relevant legislation.” (ISDIAH 5.4.2)"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "literal20",
+    "superproperty" : [ "property86" ]
+  }, {
+    "id" : "property37",
+    "label" : {
+      "IRI-based" : "hasRepositoryAddress",
+      "undefined" : "address"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasRepositoryAddress",
+    "attributes" : [ "external" ],
+    "domain" : "class35",
+    "range" : "class27",
+    "superproperty" : [ "property63" ]
+  }, {
+    "id" : "property86",
+    "label" : {
+      "IRI-based" : "Note",
+      "undefined" : "Note"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/Note",
+    "comment" : {
+      "undefined" : "Data property representing various notes associated to the institution and repository descriptions e.g. cao:holdingsNote, cao:repositoryHistoryNote, cao:sourceNote etc."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "literal17",
+    "subproperty" : [ "property88", "property74", "property89", "property72", "property81" ]
+  }, {
+    "id" : "property62",
+    "label" : {
+      "IRI-based" : "hasUID",
+      "en" : "has uid"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasUID",
+    "comment" : {
+      "en" : "To specify a value that represents a globally unique identifier corresponding to the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property31", "property47" ]
+  }, {
+    "id" : "property43",
+    "label" : {
+      "IRI-based" : "hasMaintenanceAgency",
+      "undefined" : "agency"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasMaintenanceAgency",
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class20"
+  }, {
+    "id" : "property40",
+    "label" : {
+      "IRI-based" : "usesConventionsOrStandards",
+      "undefined" : "conventions"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/usesConventionsOrStandards",
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class24",
+    "superproperty" : [ "property39" ]
+  }, {
+    "id" : "property25",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class27",
+    "range" : "class3"
+  }, {
+    "id" : "property3",
+    "label" : {
+      "IRI-based" : "Disjoint With"
+    },
+    "domain" : "class21",
+    "range" : "class34"
+  }, {
+    "id" : "property2",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class26",
+    "range" : "class2"
+  }, {
+    "id" : "property1",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class19",
+    "range" : "class2"
+  }, {
+    "id" : "property44",
+    "label" : {
+      "IRI-based" : "hasName",
+      "en" : "has name"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasName",
+    "comment" : {
+      "en" : "To specify the components of the name of the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property51" ]
+  }, {
+    "id" : "property22",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class31",
+    "range" : "class29"
+  }, {
+    "id" : "property21",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class12",
+    "range" : "class29"
+  }, {
+    "id" : "property24",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class17",
+    "range" : "class8"
+  }, {
+    "id" : "property23",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class38",
+    "range" : "class11"
+  }, {
+    "id" : "property30",
+    "label" : {
+      "IRI-based" : "hasConventions",
+      "undefined" : "convention"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasConventions",
+    "attributes" : [ "external" ],
+    "domain" : "class23",
+    "range" : "class24",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property20",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class40",
+    "range" : "class29"
+  }, {
+    "id" : "property47",
+    "label" : {
+      "IRI-based" : "hasRecordId",
+      "undefined" : "id"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasRecordId",
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "thing5",
+    "superproperty" : [ "property62" ]
+  }, {
+    "id" : "property83",
+    "label" : {
+      "IRI-based" : "role",
+      "en" : "role"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#role",
+    "comment" : {
+      "en" : "To specify the function or part played in a particular situation by the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "literal14",
+    "subproperty" : [ "property80" ]
+  }, {
+    "id" : "property63",
+    "label" : {
+      "IRI-based" : "siteAddress",
+      "it" : "indirizzo della sede",
+      "fr" : "adresse du Site",
+      "en" : "site Address",
+      "es" : "es la dirección de la sede"
+    },
+    "iri" : "http://www.w3.org/ns/org#siteAddress",
+    "comment" : {
+      "it" : "Indica un indirizzo per la sede in una codifica appropriata. Il codominio è lasciato libero ma è consigliabile l'uso del vocabolario vCard (http://www.w3.org/TR/vcard-rdf/). L'indirizzo può includere email, numero di telefono e informazioni di geolocalizzazione e non è vincolato ad essere un indirizzo fisico.",
+      "fr" : "Indique une adresse pour le site dans un encodage approprié. L'usage du vocabulaire vCard ( http://www.w3.org/TR/vcard-rdf/) est encouragé, mais le range est ouvert pour permettre l'utilisation d'autres vocabulaires. L'adresse peut comporter le courriel, le téléphone, et l'information de géolocalisation; et n'est donc pas seulement limitée à une adresse physique. ",
+      "en" : "Indicates an address for the site in a suitable encoding. Use of vCard (using the http://www.w3.org/TR/vcard-rdf/ vocabulary) is encouraged but the range is left open to allow other encodings to be used. The address may include email, telephone, and geo-location information and is not restricted to a physical address. ",
+      "es" : "Dirección de la sede según una codificación adecuada. Se recomienda el uso de vCard (que utiliza el vocabulario en http://www.w3.org/TR/vcard-rdf/), pero el rango no se restringe únicamente al uso de este vocabulario sino que se permite el uso de otros códigos. La dirección puede constar de una dirección de correo electrónico, un número de teléfono o información de geo-localización, y no se limita a una dirección postal física.",
+      "ja" : "????????????????????????vCard[vcard-rdf]????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/org",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property37" ]
+  }, {
+    "id" : "property45",
+    "label" : {
+      "IRI-based" : "hasRepository",
+      "undefined" : "repository"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasRepository",
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class35",
+    "superproperty" : [ "property54" ]
+  }, {
+    "id" : "property41",
+    "label" : {
+      "IRI-based" : "hasRelated",
+      "en" : "has related"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasRelated",
+    "comment" : {
+      "en" : "To specify a relationship between another entity and the entity represented by this object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property61", "property26" ]
+  }, {
+    "id" : "property72",
+    "label" : {
+      "IRI-based" : "sourceNote",
+      "undefined" : "Source"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/sourceNote",
+    "comment" : {
+      "undefined" : "Descriptive information about the source from where descriptions of the repository history or holdings are coming e.g. \"the web site of the archive\" (free text)\n\nCorresponds to /control/sources/sourceEntry element"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class32",
+    "range" : "literal2",
+    "superproperty" : [ "property86" ],
+    "disjoint" : [ "property88", "property74" ]
+  }, {
+    "id" : "property33",
+    "label" : {
+      "IRI-based" : "hasRepositoryTypes",
+      "undefined" : "types"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasRepositoryTypes",
+    "attributes" : [ "external" ],
+    "domain" : "class10",
+    "range" : "class12",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property17",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class24",
+    "range" : "class29"
+  }, {
+    "id" : "property51",
+    "label" : {
+      "IRI-based" : "hasAgencyName",
+      "undefined" : "name"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasAgencyName",
+    "attributes" : [ "external" ],
+    "domain" : "class20",
+    "range" : "thing2",
+    "superproperty" : [ "property44" ]
+  }, {
+    "id" : "property16",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class23",
+    "range" : "class22"
+  }, {
+    "id" : "property15",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class14",
+    "range" : "class22"
+  }, {
+    "id" : "property14",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class10",
+    "range" : "class22"
+  }, {
+    "id" : "property9",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class39",
+    "range" : "class40"
+  }, {
+    "id" : "property8",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class1",
+    "range" : "class40"
+  }, {
+    "id" : "property78",
+    "label" : {
+      "IRI-based" : "URI",
+      "undefined" : "URI"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/URI",
+    "comment" : {
+      "undefined" : "A URI to the resource from where repository history or holdings descriptions are created.\n\nCorresponds to /control/sources/source@href and /control/sources/source@id\n\n\nIn case there is not online representation of the resource, URI has to be provided as well and manually defined by the user. \n\nFor example,  in this case it may be of a format such as :\n\n<scheme>:<some identifying string>\n\nwhere the scheme is practically a (cendari internal) URI scheme such as:\n\ncaoid  (Cendari Archival Ontology Identifiers)\n\n\n\n\n\n"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class32",
+    "range" : "datatype8"
+  }, {
+    "id" : "property7",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class5",
+    "range" : "class40"
+  }, {
+    "id" : "property19",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class2",
+    "range" : "class29"
+  }, {
+    "id" : "property6",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class30",
+    "range" : "class40"
+  }, {
+    "id" : "property18",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class17",
+    "range" : "class29"
+  }, {
+    "id" : "property5",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class9",
+    "range" : "class40"
+  }, {
+    "id" : "property69",
+    "label" : {
+      "IRI-based" : "hasPhoto",
+      "en" : "has photo"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasPhoto",
+    "comment" : {
+      "en" : "To specify an image or photograph information that annotates some aspect of the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "class35",
+    "range" : "thing7"
+  }, {
+    "id" : "property76",
+    "label" : {
+      "IRI-based" : "note",
+      "en" : "note"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#note",
+    "comment" : {
+      "en" : "A note associated with the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "literal6",
+    "subproperty" : [ "property87" ]
+  }, {
+    "id" : "property13",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class20",
+    "range" : "class25"
+  }, {
+    "id" : "property12",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class17",
+    "range" : "class25"
+  }, {
+    "id" : "property11",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class28",
+    "range" : "class6"
+  }, {
+    "id" : "property10",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class35",
+    "range" : "class36"
+  }, {
+    "id" : "property49",
+    "label" : {
+      "IRI-based" : "hasContact",
+      "undefined" : "contact"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasContact",
+    "attributes" : [ "external" ],
+    "domain" : "class40",
+    "range" : "class18"
+  }, {
+    "id" : "property35",
+    "label" : {
+      "IRI-based" : "hasAgent",
+      "undefined" : "agent"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasAgent",
+    "attributes" : [ "external" ],
+    "domain" : "class13",
+    "range" : "class33",
+    "superproperty" : [ "property38" ]
+  }, {
+    "id" : "property61",
+    "label" : {
+      "IRI-based" : "hasAccessNotes",
+      "undefined" : "access notes"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasAccessNotes",
+    "attributes" : [ "external" ],
+    "domain" : "class35",
+    "range" : "class2",
+    "superproperty" : [ "property41" ]
+  }, {
+    "id" : "property46",
+    "label" : {
+      "IRI-based" : "hasMaintenanceEvent",
+      "undefined" : "event"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasMaintenanceEvent",
+    "comment" : {
+      "undefined" : "property relating the maintenance history of the institution with the maintenance activity (prov:Activity)\n"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class28",
+    "range" : "class13",
+    "superproperty" : [ "property53" ]
+  }, {
+    "id" : "property73",
+    "label" : {
+      "IRI-based" : "identifier",
+      "it" : "identificatore",
+      "fr" : "identifiant",
+      "en" : "identifier",
+      "es" : "tiene identificador"
+    },
+    "iri" : "http://www.w3.org/ns/org#identifier",
+    "comment" : {
+      "it" : "Indica un identificatore univoco per l'organizzazione, come ad esempio la partita IVA di un'azienda. Molti schemi di identificazione a livello nazionale e internazionale sono disponibili allo scopo. L'ontologia ORG è neutrale rispetto allo schema da utilizzare. Lo schema di identificazione dovrebbe essere indicato dal datatype del valore dell'identificatore. L'uso del datatype per distinguere lo schema di identificazione è coerente con le best practice per `skos:notation`, di cui questa proprietà è una specializzazione.",
+      "fr" : "Donne un identifiant, comme par exemple le numéro d'enregistrement d'une entreprise, qui peut être utilisé comme identifiant unique pour l'Organisation. De nombreux schémas nationaux et internationaux sont disponibles. Cette ontologie reste neutre par rapport au schéma utilisé. Le schéma particulier utilisé devrait être indiqué par le `datatype` de la valeur de l'identifiant. Utiliser les datatypes pour distinguer les schémas de notation est cohérent avec les bonnes pratiques pour `skos:notation` dont cette propriété est une spécialisation.",
+      "en" : "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization. Many different national and international identier schemes are available. The org ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value.  Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for `skos:notation` of which this property is a specialization.",
+      "es" : "Código o identificador, como por ejemplo el CIF de una empresa, que permite identificar de forma inequívoca a una organización. Existen muchos códigos de identificación tanto nacionales como internacionales. Esta ontología no obliga al uso de ningún esquema en concreto. Los códigos de identificación utilizados en cada caso se deberían indicar mediante el uso de la propiedad “datatype” del valor del identificador. El uso de la propiedad “datatype” para especificar el esquema de notación utilizado está en consonancia con las buenas prácticas recomendadas para el uso de la propiedad `skos:notation`, de la que esta propiedad es una especialización.",
+      "ja" : "????????????????????????????????????"
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/org",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "literal3",
+    "subproperty" : [ "property71" ]
+  }, {
+    "id" : "property34",
+    "label" : {
+      "IRI-based" : "hasParallelName",
+      "undefined" : "parallel name"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasParallelName",
+    "comment" : {
+      "undefined" : "see cao:InstitutionIdentity"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class16",
+    "superproperty" : [ "property48" ],
+    "disjoint" : [ "property48", "property64" ]
+  }, {
+    "id" : "property55",
+    "label" : {
+      "IRI-based" : "hasEmail",
+      "en" : "has email"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasEmail",
+    "comment" : {
+      "en" : "To specify the electronic mail address for communication with the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "class48",
+    "range" : "thing6"
+  }, {
+    "id" : "property53",
+    "label" : {
+      "IRI-based" : "activity"
+    },
+    "iri" : "http://www.w3.org/ns/prov#activity",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property46" ]
+  }, {
+    "id" : "property56",
+    "label" : {
+      "IRI-based" : "hasTelephone",
+      "en" : "has telephone"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasTelephone",
+    "comment" : {
+      "en" : "To specify the telephone number for telephony communication with the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property28", "property57" ]
+  }, {
+    "id" : "property75",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/name",
+    "attributes" : [ "external" ],
+    "domain" : "class16",
+    "range" : "literal5",
+    "superproperty" : [ "property79" ]
+  }, {
+    "id" : "property31",
+    "label" : {
+      "IRI-based" : "hasAgencyCode",
+      "undefined" : "agency code"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasAgencyCode",
+    "attributes" : [ "external" ],
+    "domain" : "class20",
+    "range" : "thing2",
+    "superproperty" : [ "property62" ]
+  }, {
+    "id" : "property88",
+    "label" : {
+      "IRI-based" : "holdingsNote",
+      "undefined" : "Holdings"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/holdingsNote",
+    "comment" : {
+      "undefined" : "Based on specified source (with URL, SourceNote) \ncorresponding to /holdings/descriptiveNote element in CENDARI@EAG"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class32",
+    "range" : "literal19",
+    "superproperty" : [ "property86" ],
+    "disjoint" : [ "property74", "property72" ]
+  }, {
+    "id" : "property26",
+    "label" : {
+      "IRI-based" : "isPerson",
+      "undefined" : "isPerson"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/isPerson",
+    "attributes" : [ "external" ],
+    "domain" : "class18",
+    "range" : "class34",
+    "superproperty" : [ "property41" ]
+  }, {
+    "id" : "property59",
+    "label" : {
+      "IRI-based" : "hasTopics",
+      "undefined" : "topics"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasTopics",
+    "attributes" : [ "external" ],
+    "domain" : "class14",
+    "range" : "class31",
+    "superproperty" : [ "property66" ]
+  }, {
+    "id" : "property80",
+    "label" : {
+      "IRI-based" : "occupation"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/occupation",
+    "attributes" : [ "external" ],
+    "domain" : "class18",
+    "range" : "literal10",
+    "superproperty" : [ "property83" ]
+  }, {
+    "id" : "property85",
+    "label" : {
+      "IRI-based" : "termsOfUseURI",
+      "undefined" : "TermsOfUseURI"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/termsOfUseURI",
+    "comment" : {
+      "undefined" : "Alternatively, external  (to be more accurate) URI to the document containing termsOfUse information.\n\nCan be used solely or as a complement to cao:termsOfUseNote"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "datatype16"
+  }, {
+    "id" : "property87",
+    "label" : {
+      "IRI-based" : "addressType",
+      "undefined" : "address type"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/addressType",
+    "comment" : {
+      "undefined" : "Type of address recorded as a repository address. Permits to specify what type of address is recorded (postal, visitors, etc.). \n\nCorresponds to /desc/repositories/repository/location@type attribute \n"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class27",
+    "range" : "literal18",
+    "superproperty" : [ "property76" ]
+  }, {
+    "id" : "property58",
+    "label" : {
+      "IRI-based" : "hasMaintenanceHistory",
+      "undefined" : "history"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasMaintenanceHistory",
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class28"
+  }, {
+    "id" : "property39",
+    "label" : {
+      "IRI-based" : "related",
+      "en" : "has related"
+    },
+    "iri" : "http://www.w3.org/2004/02/skos/core#related",
+    "comment" : {
+      "en" : "skos:related is disjoint with skos:broaderTransitive"
+    },
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "attributes" : [ "external" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to a concept with which there is an associative semantic relationship.",
+        "type" : "label"
+      } ]
+    },
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property68", "property60", "property50", "property40" ]
+  }, {
+    "id" : "property82",
+    "label" : {
+      "IRI-based" : "hasMaintenanceStatus",
+      "undefined" : "Status"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasMaintenanceStatus",
+    "comment" : {
+      "undefined" : "corresponds to /eag/control/maintenancestatus\n\nMaintenance status of the institutional description. Possible values:\nnew, cancelled, deleted, deletedReplaced, deletedMerged, deletedSplit, derived or revised"
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class51"
+  }, {
+    "id" : "property38",
+    "label" : {
+      "IRI-based" : "agent"
+    },
+    "iri" : "http://www.w3.org/ns/prov#agent",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "thing4",
+    "subproperty" : [ "property35" ]
+  }, {
+    "id" : "property70",
+    "label" : {
+      "IRI-based" : "hasGeo",
+      "en" : "has geo"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasGeo",
+    "comment" : {
+      "en" : "To specify information related to the global positioning of the object. May also be used as a property parameter."
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "class27",
+    "range" : "thing1"
+  }, {
+    "id" : "property67",
+    "label" : {
+      "IRI-based" : "hasCountryCode",
+      "undefined" : "code"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasCountryCode",
+    "attributes" : [ "external" ],
+    "domain" : "class16",
+    "range" : "class7"
+  }, {
+    "id" : "property84",
+    "label" : {
+      "IRI-based" : "notAfter",
+      "undefined" : "Latest"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/notAfter",
+    "comment" : {
+      "undefined" : "Can be defined as an latest  \"known\" date of the content contained in some information.\n\nInitial use is for cao:InstitutionIdentity, describing latest date when the institution is represented with this identity information."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class16",
+    "range" : "datatype15"
+  }, {
+    "id" : "property42",
+    "label" : {
+      "IRI-based" : "hasSources",
+      "undefined" : "sources"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/hasSources",
+    "attributes" : [ "external" ],
+    "domain" : "class17",
+    "range" : "class32"
+  }, {
+    "id" : "property77",
+    "label" : {
+      "IRI-based" : "notBefore",
+      "undefined" : "Earliest"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/notBefore",
+    "comment" : {
+      "undefined" : "Can be defined as an earliest \"known\" date of the content contained in some information.\n\nInitial use is for cao:InstitutionIdentity, describing earliest date when the institution is known represented with this identity information."
+    },
+    "attributes" : [ "external" ],
+    "domain" : "class16",
+    "range" : "datatype7"
+  }, {
+    "id" : "property71",
+    "label" : {
+      "IRI-based" : "repositoryId"
+    },
+    "iri" : "http://resources.cendari.dariah.eu/ontologies/cao/repositoryId",
+    "attributes" : [ "external" ],
+    "domain" : "class16",
+    "range" : "literal1",
+    "superproperty" : [ "property73" ]
+  }, {
+    "id" : "property79",
+    "label" : {
+      "IRI-based" : "organization-name",
+      "en" : "organization name"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#organization-name",
+    "comment" : {
+      "en" : "To specify the organizational name associated with the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "literal9",
+    "subproperty" : [ "property75" ]
+  }, {
+    "id" : "property27",
+    "label" : {
+      "IRI-based" : "hasURL",
+      "en" : "has url"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasURL",
+    "comment" : {
+      "en" : "To specify a uniform resource locator associated with the object"
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "class27",
+    "range" : "thing1"
+  }, {
+    "id" : "property36",
+    "label" : {
+      "IRI-based" : "hasLogo",
+      "en" : "has logo"
+    },
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasLogo",
+    "comment" : {
+      "en" : "To specify a graphic image of a logo associated with the object "
+    },
+    "isDefinedBy" : "http://www.w3.org/2006/vcard/ns",
+    "attributes" : [ "external" ],
+    "domain" : "class44",
+    "range" : "thing3"
+  } ]
+}
